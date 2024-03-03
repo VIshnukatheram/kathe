@@ -1,0 +1,297 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Check_Approved_Or_Reject_Service_Request": {
+                "actions": {
+                    "Assign_Service_Request_To_Seniors_For_Approve": {
+                        "inputs": {
+                            "method": "POST",
+                            "queries": {
+                                "code": "@{parameters('CommonServiceCode')}",
+                                "reqtype": "Assign_Role",
+                                "role": "@{body('Check_The_Role_of_Approved_User')}",
+                                "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                            },
+                            "uri": "@{parameters('CommonServiceDomain')}/api/AssignToSelectedUser"
+                        },
+                        "runAfter": {
+                            "Is_Assigning_To_Finance_Role": [
+                                "SUCCEEDED"
+                            ]
+                        },
+                        "runtimeConfiguration": {
+                            "contentTransfer": {
+                                "transferMode": "Chunked"
+                            }
+                        },
+                        "type": "Http"
+                    },
+                    "Check_Is_First_Approver_": {
+                        "actions": {
+                            "Bank_Details_Update": {
+                                "inputs": {
+                                    "method": "POST",
+                                    "queries": {
+                                        "code": "@{parameters('LifeAsiaAPICode')}",
+                                        "reqtype": "3_1_Update",
+                                        "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                                    },
+                                    "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+                                },
+                                "runtimeConfiguration": {
+                                    "contentTransfer": {
+                                        "transferMode": "Chunked"
+                                    }
+                                },
+                                "type": "Http"
+                            }
+                        },
+                        "else": {
+                            "actions": {}
+                        },
+                        "expression": {
+                            "and": [
+                                {
+                                    "equals": [
+                                        "@body('Check_The_Role_of_Approved_User')",
+                                        10
+                                    ]
+                                }
+                            ]
+                        },
+                        "runAfter": {
+                            "Check_The_Role_of_Approved_User": [
+                                "SUCCEEDED"
+                            ]
+                        },
+                        "type": "If"
+                    },
+                    "Check_The_Role_of_Approved_User": {
+                        "inputs": {
+                            "method": "POST",
+                            "queries": {
+                                "code": "@{parameters('CommonServiceCode')}",
+                                "reqtype": "Check_Role",
+                                "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                            },
+                            "uri": "@{parameters('CommonServiceDomain')}/api/AssignToSelectedUser"
+                        },
+                        "runtimeConfiguration": {
+                            "contentTransfer": {
+                                "transferMode": "Chunked"
+                            }
+                        },
+                        "type": "Http"
+                    },
+                    "Is_Assigning_To_Finance_Role": {
+                        "actions": {
+                            "PayeeCode_Reversal": {
+                                "inputs": {
+                                    "method": "POST",
+                                    "queries": {
+                                        "code": "@{parameters('LifeAsiaAPICode')}",
+                                        "reqtype": "PayeeCodeReversal",
+                                        "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                                    },
+                                    "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+                                },
+                                "runtimeConfiguration": {
+                                    "contentTransfer": {
+                                        "transferMode": "Chunked"
+                                    }
+                                },
+                                "type": "Http"
+                            },
+                            "Payee_Code_Approval": {
+                                "inputs": {
+                                    "method": "POST",
+                                    "queries": {
+                                        "code": "@{parameters('LifeAsiaAPICode')}",
+                                        "reqtype": "PayeeCodeApproval",
+                                        "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                                    },
+                                    "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+                                },
+                                "runAfter": {
+                                    "Payee_Code_Creation": [
+                                        "SUCCEEDED"
+                                    ]
+                                },
+                                "runtimeConfiguration": {
+                                    "contentTransfer": {
+                                        "transferMode": "Chunked"
+                                    }
+                                },
+                                "type": "Http"
+                            },
+                            "Payee_Code_Creation": {
+                                "inputs": {
+                                    "method": "POST",
+                                    "queries": {
+                                        "code": "@{parameters('LifeAsiaAPICode')}",
+                                        "reqtype": "PayeeCodeCreation",
+                                        "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}"
+                                    },
+                                    "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+                                },
+                                "runAfter": {
+                                    "PayeeCode_Reversal": [
+                                        "SUCCEEDED"
+                                    ]
+                                },
+                                "runtimeConfiguration": {
+                                    "contentTransfer": {
+                                        "transferMode": "Chunked"
+                                    }
+                                },
+                                "type": "Http"
+                            }
+                        },
+                        "else": {
+                            "actions": {}
+                        },
+                        "expression": {
+                            "and": [
+                                {
+                                    "equals": [
+                                        "@body('Check_The_Role_of_Approved_User')",
+                                        10
+                                    ]
+                                }
+                            ]
+                        },
+                        "runAfter": {
+                            "Check_Is_First_Approver_": [
+                                "SUCCEEDED"
+                            ]
+                        },
+                        "type": "If"
+                    }
+                },
+                "else": {
+                    "actions": {
+                        "Closed_SR": {
+                            "inputs": {
+                                "method": "POST",
+                                "queries": {
+                                    "code": "@{parameters('CommonServiceCode')}",
+                                    "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}",
+                                    "status": "CLOSED"
+                                },
+                                "uri": "@{parameters('CommonServiceDomain')}/api/ChangeStatusForSelectedServiceRequest"
+                            },
+                            "runAfter": {
+                                "Communication_For_Rejected": [
+                                    "SUCCEEDED"
+                                ]
+                            },
+                            "runtimeConfiguration": {
+                                "contentTransfer": {
+                                    "transferMode": "Chunked"
+                                }
+                            },
+                            "type": "Http"
+                        },
+                        "Communication_Config_For_Reject": {
+                            "inputs": {
+                                "body": "@triggerBody()?['CommunicationRequest']",
+                                "method": "POST",
+                                "queries": {
+                                    "code": "@{parameters('CommunicationServiceCode')}",
+                                    "srid": "@{triggerBody()?['POSActions']?['SrvReqRefNo']}",
+                                    "status": "reject"
+                                },
+                                "uri": "@{parameters('CommunicationConfigDomain')}/api/GenerateTemplate"
+                            },
+                            "runtimeConfiguration": {
+                                "contentTransfer": {
+                                    "transferMode": "Chunked"
+                                }
+                            },
+                            "type": "Http"
+                        },
+                        "Communication_For_Rejected": {
+                            "inputs": {
+                                "body": "@outputs('Communication_Config_For_Reject').body",
+                                "method": "POST",
+                                "queries": {
+                                    "code": "@{parameters('CommunicationServiceCode')}"
+                                },
+                                "uri": "@{parameters('CommunicationServiceDomain')}/api/CommunicationService"
+                            },
+                            "runAfter": {
+                                "Communication_Config_For_Reject": [
+                                    "SUCCEEDED"
+                                ]
+                            },
+                            "runtimeConfiguration": {
+                                "contentTransfer": {
+                                    "transferMode": "Chunked"
+                                }
+                            },
+                            "type": "Http"
+                        }
+                    }
+                },
+                "expression": {
+                    "and": [
+                        {
+                            "equals": [
+                                "@toUpper(triggerBody()?['POSActions']?['Status'])",
+                                "APPROVED"
+                            ]
+                        }
+                    ]
+                },
+                "runAfter": {},
+                "type": "If"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "triggers": {
+            "When_a_HTTP_request_is_received": {
+                "inputs": {
+                    "method": "POST",
+                    "schema": {
+                        "properties": {
+                            "CommunicationRequest": {
+                                "type": "string"
+                            },
+                            "POSActions": {
+                                "properties": {
+                                    "Comments": {
+                                        "type": "string"
+                                    },
+                                    "RequirementComments": {},
+                                    "RequirementList": {
+                                        "type": "string"
+                                    },
+                                    "SrvReqRefNo": {
+                                        "type": "string"
+                                    },
+                                    "Status": {
+                                        "type": "string"
+                                    },
+                                    "TransactionPayload": {},
+                                    "TransectionId": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "RequestType": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "kind": "Http",
+                "type": "Request"
+            }
+        }
+    },
+    "kind": "Stateful"
+}

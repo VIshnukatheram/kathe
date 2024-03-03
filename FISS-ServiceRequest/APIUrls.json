@@ -1,0 +1,10 @@
+{
+  "LAURLS": {
+    "PaymentLink": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink",
+    "ContactUpdateMobileNum": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/MobileNoUpdate"
+  },
+  "CommonURLS": {
+    "Email": "https://communicationservice.azurewebsites.net/api/CommunicationService?code=iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ==",
+    "DeDup": ""
+  }
+}

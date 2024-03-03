@@ -1,0 +1,292 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Communication": {
+        "inputs": {
+          "body": "@body('Communication_Config')",
+          "method": "POST",
+          "queries": {
+            "code": "@{parameters('CommunicationServiceCode')}"
+          },
+          "uri": "@{parameters('CommunicationServiceDomain')}/api/CommunicationService"
+        },
+        "runAfter": {
+          "Communication_Config": [
+            "SUCCEEDED"
+          ]
+        },
+        "type": "Http"
+      },
+      "Communication_Config": {
+        "inputs": {
+          "body": "@triggerBody()?['communicationPayload']",
+          "method": "POST",
+          "queries": {
+            "code": "@{parameters('CommunicationConfigCode')}",
+            "srid": "@{triggerBody()?['srvReqRefNo']}",
+            "status": "open"
+          },
+          "uri": "@{parameters('CommunicationConfigDomain')}/api/GenerateTemplate"
+        },
+        "runAfter": {
+          "Find_Validated_By": [
+            "SUCCEEDED"
+          ]
+        },
+        "type": "Http"
+      },
+      "De_Dup_Check": {
+        "actions": {
+          "Assign_To_User": {
+            "inputs": {
+              "method": "POST",
+              "queries": {
+                "code": "@{parameters('CommonServiceCode')}",
+                "srid": "@{triggerBody()?['srvReqRefNo']}"
+              },
+              "uri": "@{parameters('CommonServiceDomain')}/api/AssignToSelectedUser"
+            },
+            "type": "Http"
+          }
+        },
+        "else": {
+          "actions": {
+            "Close_the_service_Reqeust": {
+              "inputs": {
+                "method": "POST",
+                "queries": {
+                  "code": "@{parameters('CommonServiceCode')}",
+                  "srid": "@{triggerBody()?['srvReqRefNo']}",
+                  "status": "CLOSED"
+                },
+                "uri": "@{parameters('CommonServiceDomain')}/api/ChangeStatusForSelectedServiceRequest"
+              },
+              "runAfter": {
+                "Life_Asia_API_Update_Contact_Type": [
+                  "SUCCEEDED"
+                ]
+              },
+              "type": "Http"
+            },
+            "Communication_Config_For_Closed": {
+              "inputs": {
+                "body": "@triggerBody()?['communicationPayload']",
+                "method": "POST",
+                "queries": {
+                  "code": "@{parameters('CommunicationConfigCode')}",
+                  "srid": "@{triggerBody()?['srvReqRefNo']}",
+                  "status": "closed"
+                },
+                "uri": "@{parameters('CommunicationConfigDomain')}/api/GenerateTemplate"
+              },
+              "runAfter": {
+                "Close_the_service_Reqeust": [
+                  "SUCCEEDED"
+                ]
+              },
+              "type": "Http"
+            },
+            "Communication_For_Closed": {
+              "inputs": {
+                "body": "@body('Communication_Config_For_Closed')",
+                "method": "POST",
+                "queries": {
+                  "code": "@{parameters('CommunicationServiceCode')}"
+                },
+                "uri": "@{parameters('CommunicationServiceDomain')}/api/CommunicationService"
+              },
+              "runAfter": {
+                "Communication_Config_For_Closed": [
+                  "SUCCEEDED"
+                ]
+              },
+              "type": "Http"
+            },
+            "Life_Asia_API_Update_Contact_Type": {
+              "inputs": {
+                "method": "POST",
+                "queries": {
+                  "code": "@{parameters('LifeAsiaAPICode')}",
+                  "reqtype": "@{triggerBody()?['callType']}_@{triggerBody()?['subType']}_Update",
+                  "srid": "@{triggerBody()?['srvReqRefNo']}"
+                },
+                "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+              },
+              "type": "Http"
+            }
+          }
+        },
+        "expression": {
+          "and": [
+            {
+              "equals": [
+                "@body('Life_Asia_API_De_Dup')",
+                true
+              ]
+            }
+          ]
+        },
+        "runAfter": {
+          "Life_Asia_API_De_Dup": [
+            "SUCCEEDED"
+          ]
+        },
+        "type": "If"
+      },
+      "Find_Validated_By": {
+        "inputs": {
+          "from": "@triggerBody()?['serviceRequestTransectionData']",
+          "where": "@equals(item()?['tagName'],'ValidatedBy')"
+        },
+        "runAfter": {},
+        "type": "Query"
+      },
+      "Life_Asia_API_De_Dup": {
+        "inputs": {
+          "method": "POST",
+          "queries": {
+            "code": "@{parameters('LifeAsiaAPICode')}",
+            "reqtype": "@{triggerBody()?['callType']}_@{triggerBody()?['subType']}_deDup",
+            "srid": "@{triggerBody()?['srvReqRefNo']}"
+          },
+          "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+        },
+        "runAfter": {
+          "Communication": [
+            "SUCCEEDED"
+          ]
+        },
+        "type": "Http"
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {},
+    "triggers": {
+      "When_a_HTTP_request_is_received": {
+        "inputs": {
+          "method": "POST",
+          "schema": {
+            "properties": {
+              "assignedToRole": {},
+              "assignedToUser": {},
+              "branchRef": {
+                "type": "integer"
+              },
+              "callType": {
+                "type": "integer"
+              },
+              "category": {
+                "type": "integer"
+              },
+              "communicationPayload": {
+                "type": "string"
+              },
+              "createdByRef": {
+                "type": "string"
+              },
+              "createdOn": {
+                "type": "string"
+              },
+              "currentStatus": {
+                "type": "string"
+              },
+              "custRole": {
+                "type": "integer"
+              },
+              "custSignDateTime": {
+                "type": "string"
+              },
+              "customerRef": {
+                "type": "integer"
+              },
+              "dob": {
+                "type": "string"
+              },
+              "modifiedByRef": {
+                "type": "string"
+              },
+              "modifiedOn": {
+                "type": "string"
+              },
+              "planName": {
+                "type": "string"
+              },
+              "policyRef": {
+                "type": "integer"
+              },
+              "policyStatus": {
+                "type": "string"
+              },
+              "proposerName": {
+                "type": "string"
+              },
+              "prtSerReqID": {},
+              "reasonDelayed": {
+                "type": "string"
+              },
+              "reasonForChange": {
+                "type": "string"
+              },
+              "reqMode": {
+                "type": "integer"
+              },
+              "reqSource": {
+                "type": "integer"
+              },
+              "requestDateTime": {
+                "type": "string"
+              },
+              "serviceRequestTransectionData": {
+                "items": {
+                  "properties": {
+                    "servRequestDtlId": {
+                      "type": "integer"
+                    },
+                    "srvReqID": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "tagName": {
+                      "type": "string"
+                    },
+                    "tagValue": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "servRequestDtlId",
+                    "srvReqID",
+                    "tagName",
+                    "tagValue",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "source": {},
+              "srvReqID": {
+                "type": "integer"
+              },
+              "srvReqRefNo": {
+                "type": "string"
+              },
+              "subType": {
+                "type": "integer"
+              },
+              "transPayload": {},
+              "transactionPayload": {}
+            },
+            "type": "object"
+          }
+        },
+        "kind": "Http",
+        "type": "Request"
+      }
+    }
+  },
+  "kind": "Stateful"
+}

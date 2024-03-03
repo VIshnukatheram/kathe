@@ -1,0 +1,61 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "HTTP": {
+        "inputs": {
+          "body": "@triggerBody()",
+          "method": "POST",
+          "queries": {
+            "code": "@{parameters('CommonServiceCode')}"
+          },
+          "uri": "@{parameters('CommonServiceDomain')}/api/InsertNlpEmail"
+        },
+        "runAfter": {},
+        "runtimeConfiguration": {
+          "contentTransfer": {
+            "transferMode": "Chunked"
+          }
+        },
+        "type": "Http"
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {},
+    "triggers": {
+      "When_a_new_email_arrives_(V3)": {
+        "inputs": {
+          "fetch": {
+            "method": "get",
+            "pathTemplate": {
+              "template": "/v3/Mail/OnNewEmail"
+            },
+            "queries": {
+              "folderPath": "Inbox"
+            }
+          },
+          "host": {
+            "connection": {
+              "referenceName": "office365"
+            }
+          },
+          "subscribe": {
+            "body": {
+              "NotificationUrl": "@{listCallbackUrl()}"
+            },
+            "method": "post",
+            "pathTemplate": {
+              "template": "/GraphMailSubscriptionPoke/$subscriptions"
+            },
+            "queries": {
+              "folderPath": "Inbox"
+            }
+          }
+        },
+        "splitOn": "@triggerBody()?['value']",
+        "type": "ApiConnectionNotification"
+      }
+    }
+  },
+  "kind": "Stateful"
+}

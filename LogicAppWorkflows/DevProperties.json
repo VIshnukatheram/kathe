@@ -1,0 +1,34 @@
+{
+    "CommonServiceCode": {
+        "type": "String",
+        "value": "giKcrELyZeQj6iEVl101KQPYc21n1rsfCjj1g3P4137JAzFuyRzyog=="
+    },
+    "CommonServiceDomain": {
+        "type": "String",
+        "value": "https://fgliccommonserviceapi.azurewebsites.net"
+    },
+    "CommunicationConfigCode": {
+        "type": "String",
+        "value": "PvUKEztllE6jRdrdDPcG5G7iEfcqpgK9HGf0wyKPPVG7AzFuRxjpZA=="
+    },
+    "CommunicationConfigDomain": {
+        "type": "String",
+        "value": "https://fgliccommconfigapi.azurewebsites.net"
+    },
+    "CommunicationServiceCode": {
+        "type": "String",
+        "value": "mYQtSm9yO2bpiFe37B8YqhieCZdVjsZ4-0eVCi198RXZAzFudwBuwA=="
+    },
+    "CommunicationServiceDomain": {
+        "type": "String",
+        "value": " https://communicationservice.azurewebsites.net"
+    },
+    "LifeAsiaAPICode": {
+        "type": "String",
+        "value": "TE-n_C1UrRl-uFMTCbrrvsnYIVXWHGRaZ_YkRdoHp9HjAzFuTo4aYw=="
+    },
+    "LifeAsiaDomain": {
+        "type": "String",
+        "value": "https://fgliclifeasiaapis.azurewebsites.net"
+    }
+}

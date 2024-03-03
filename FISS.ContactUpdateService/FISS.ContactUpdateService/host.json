@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:nichebit.database.windows.net,1433;Initial Catalog=FISS;Persist Security Info=False;User ID=nichebitsqladmin;Password=49F:CrPqiyw4U!!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    //"DefaultConnection": "Server=(LocalDB)\\MSSQLLocalDB;Initial Catalog=FISS;Integrated Security=True;"
+  }
+}

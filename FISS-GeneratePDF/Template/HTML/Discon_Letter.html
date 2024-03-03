@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RPR_RPN_Batch_Application</title>
+    <meta name="author" content="Registered to: FUTUGENE" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        p, li {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 9pt;
+            list-style-type: none;
+        }
+
+        .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        .s1, .s4 {
+            font-size: 10pt;
+        }
+
+        .s2, .s5, p, li {
+            font-size: 9pt;
+        }
+
+        .s3 {
+            font-size: 10pt;
+        }
+
+        .s6 {
+            color: #FFF;
+        }
+
+        .s7 {
+            color: #A81A38;
+        }
+
+        .s8 {
+            color: #4A4849;
+        }
+
+        ul {
+            padding-left: 21pt;
+        }
+
+        .projectdetails {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
+        ul li:before {
+            content: "· ";
+            color: black;
+            font-family: "Courier New", monospace;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 9pt;
+        }
+
+        table, tbody {
+            vertical-align: top;
+            overflow: visible;
+        }
+
+        .mainDiv {
+            width: 100%;
+            display: flex;
+            margin: 25px 0px;
+            justify-content: center;
+        }
+
+            .mainDiv .leftSide {
+                width: 30%;
+                background-color: #ffccbc;
+            }
+
+                .mainDiv .leftSide img {
+                    padding: 10px 10%;
+                }
+
+            .mainDiv .rightSide {
+                width: 70%;
+                margin: 20px 10px;
+            }
+
+        .address p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        p, li {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="address" style="margin-left: 2%; margin-top: 20px;">
+        <img src="Images/Barcode.png" />
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[ADDR_LINE1]</p>
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[ADDR_LINE2]</p>
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[ADDR_LINE3]</p>
+        <p>-</p>
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[ADDR_LINE4]</p>
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[ADDR_LINE5]</p>
+        <p class="s1" style="padding-top: 2pt;padding-left: 11pt;text-indent: 0pt;line-height: 80%;text-align: left;">[Contact no]</p>
+    </div>
+
+    <div class="mainDiv">
+
+        <div class="leftSide">
+            <img src="Images/calender.png" />
+            <hr style="height: 3px; border: none; color: white; background-color: white; margin: 2px ;" />
+            <div style="background-color: #ffccbc; padding: 8px 10px;margin-top:8px">
+                <p>
+                    We have made multiple channels &
+                    partners available to you to ease your
+                    premium payment
+                </p>
+                <hr style="height: 1px; border: none; color: white; background-color: white; margin: 2px" />
+            </div>
+            <div>
+                <div style="background-color: #ffccbc; padding: 1px 12px;margin-top:2px">
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 14px; display: block;">Pay Online</strong> &nbsp; @
+                        &nbsp;<a href="" style="text-decoration: underline; color: blue;">life.futuregenerali.in</a>
+                    </p>
+                    <div>
+                        <p>You can pay via</p>
+                    </div>
+                    <div>
+                        <p>·Credit / Debit Card</p>
+                        <p>·EMI Option on cards from Leading Banks ( interest rates as applicable)</p>
+                        <p>·Net Banking </p>
+                        <p>·Leading Online Wallets</p>
+                        <p>·UPI Payments</p>
+                    </div>
+
+                    <p>
+                        <strong style="color: black; text-decoration: none;">PAYTM  @</strong>
+                        <a href="http://m.p-y.tm/fgili" style="text-decoration: underline; color: blue;" target="_blank"> http://m.p-y.tm/fgili</a>
+                    </p>
+                    <hr style="height: 1px; border: none; color: white; background-color: white; margin: 5px 0;" />
+                </div>
+                <div style="background-color: #ffccbc; padding: 5px 10px; margin-top: 2px 0;">
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;">Customer Portal and App</strong>
+                    </p>
+                    <!--<p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;">·Android App -</strong>Download “FG< Life” Mobile App from GooglePlaystore and pay your renewal premium
+                    </p>-->
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;">· Android App -</strong> <span style="margin-left: 5px;">Download “FG Life” Mobile App from Google Playstore and pay your renewal premium</span>
+                    </p>
+                    <!--<p style="display: flex; align-items: flex-start;">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block; white-spa  ce: nowrap;">· Android App -</strong>
+                        <span style="margin-left: 5px;">Download “FG Life” Mobile App from Google Playstore and pay your renewal premium</span>
+                    </p>-->
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;"> Customer Portal:</strong>Log on to
+
+                    </p>
+                    <p><a href="https://customer.life.futuregenerali.in" style="text-decoration: underline; color: blue;">customer.life.futuregenerali.in</a></p>
+                    <hr style="height: 1px; border: none; color: white; background-color: white; margin: 5px 0;" />
+                </div>
+                <div style="background-color: #ffccbc; padding: 8px 10px; margin-top: 2px">
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;">Call @ 18001022355</strong>
+                    </p>
+                    <p>· Pay via IVR using your Credit Card</p>
+                    <p>(Mon-Sat, 8am-8pm)</p>
+                    <hr style="height: 1px; border: none; color: white; background-color: white; margin: 5px 0;" />
+                </div>
+                <div style="background-color: #ffccbc; padding: 8px 10px; margin-top: 2px">
+                    <p style="display:flex">
+                        <strong style="margin-bottom: 5px; font-weight: bold; font-size: 16px; display: block;">Pay over the counter at</strong>
+                    </p>
+                    <p>· Any Future Generali India Life Insurance Branch</p>
+                    <p>· Any State Bank of India ( SBI) Branch</p>
+                    <p>· Any AXIS Bank Branch</p>
+                    <p>· Common Services Centers : Locate your nearest CSC center at</p>
+                    <p><a href="http://www.apnacsconline.in/csc-locator/" style="color: blue;" target="_blank">http://www.apnacsconline.in/csc-locator/</a></p>
+                    <p>· ITZ Cash</p>
+                    <br />
+                    <p>*Cash payment up to Rs. 1 lakh is allowed.</p>
+                    <p>**Cheque/DD to be drawn in favour of Future Generali India Life Insurance Co. Ltd. Policy</p>
+                    <p>No.01422848</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="rightSide">
+            <div style="display: flex; justify-content: space-between;">
+                <p>Premium Discontinuance Notice for Future Generali Bima Advantage Plus,</p>
+            </div>
+            <div>
+                <p>Policy No.  [Policy No]</p>
+                <hr style="height: 1px; border: none; color: white; background-color: white; margin: 2px 0;" />
+            </div>
+            <div style="background-color: #c71626; color: white;">
+                <p>Dear Jdm credit services pvt ltd,</p>
+                <p>We are concerned that your insurance cover has ceased</p>
+                <hr style="height: 1px; border: none; color: white; background-color: white; margin: 5px 0;" />
+            </div>
+            <div>
+                <style>
+                    div p {
+                        font-size: 14px; /* You can adjust the size as needed */
+                    }
+                </style>
+
+                <p>
+                    We have not received the due premiums under this policy. Hence, your policy is discontinued and
+                    all applicable benefits are terminated.
+                </p>&nbsp;
+                <p>
+                    An amount of [Amount] is withdrawn from your unit linked funds and moved to the
+                    discontinuance policy fund of the company after deducting [Deductable_Amount] (inclusive of discontinuance
+                    charge & Goods and Service Tax as applicable). These proceeds shall be payable to you after
+                    completion of 5 policy years. Fund management charges will continue to get deducted till then.
+                </p>&nbsp;
+                <p>
+                    <!--You may revive your policy within 2 years from date of discontinuance as per prevailing company-->
+                    You may revive your policy within [Policy_Peroid] from date of discontinuance as per prevailing company
+                    <!--norms and not later than expiry of lock in period of 5 years from the policy commencement date.-->
+                    norms and not later than expiry of lock in period of [Policy_Peroid_PCD] from the policy commencement date.
+                </p>&nbsp;
+                <p>
+                    We are keen to revive your policy to help you achieve the goals that you set out for.
+                </p>&nbsp;
+                <p>
+                    Looking forward to receiving your payment at the earliest.
+                </p>&nbsp;
+                <p>Regards</p>&nbsp;
+            </div>
+            <p>Customer Service - Future Generali India Life Insurance</p>
+
+            <div style="background-color: #f89474; padding: 10px 12px; margin-top: 3px; font-weight: bold; font-size: 20px;">How you are currently placed</div>
+            <div style="background-color: #ffccbc; display: flex">
+                <p style="margin: 11px 8px; font-size: 13px;"> Premium Paying Term : [Premium_Paying_Term]</p>
+                <p style="margin-top: 10px; padding-left: 5%">Completed till : [Completed_till]</p>
+            </div>
+            <div style="background-color: #d0cccc; display: flex">
+                <p style="margin: 11px 8px; font-size: 13px;"> Policy Term : [PolicyTerm ]</p>
+                <p style="margin-top: 10px; padding-left: 25%">Completed till now : [Completed_till_now]</p>
+            </div>
+            <div style="background-color: #ffccbc; display: flex ">
+                <p style="margin: 11px 8px; font-size: 13px;"> Maturity Date : [ Maturity_Date]</p>
+            </div>
+            <div style="background-color: #c71626; color: white; padding: 10px 12px;margin-top:10px">STAY UPDATED</div>
+            <div style="display: flex; background-color: #f0b4a4; margin-top: 2px">
+                <div style="background-color: #f0b4a4;">
+                    <p class="s1"><img width="50" height="50" src="Images/triangle.png" /></p>
+                </div>
+                <div>
+                    <p style="color: red;">Go Paperless</p>
+                    <p>Your current Email ID</p>
+                    <p>Update your Email ID by sending a text SMS to 5607003.</p>
+                    <p>Simply type UE <policy number=number> <new email=email ID=ID> and send</new></policy></p>
+                </div>
+            </div>
+            <div style="display: flex; background-color: #ffccbc; margin-top: 2px">
+                <div>
+                    <div style="background-color: #f0b4a4;">
+                        <p class="s1"><img width="50" height="80" src="Images/Links.png" /></p>
+                    </div>
+                </div>
+                <div style="background-color: #ffccbc; ">
+                    <p style="color: red;">Stay Connected</p>
+                    <p>Your registered mobile number -</p>
+                    <p>Update your mobile number via our website or toll free number to stay connected with critical updates on your policy and transact using your mobile number.</p>
+                </div>
+            </div>
+            <div style="display: flex; background-color: #e8acac; margin-top: 2px">
+                <div>
+                    <div style="background-color: #e8acac;">
+                        <p class="s1"><img width="50" height="50" src="Images/Hands.png" /></p>
+                    </div>
+                </div>
+                <div style="background-color: #e8acac; ">
+                    <p style="color: red;">Safe Payouts</p>
+                    <p>Your bank name:</p>
+                    <p>Your bank account number:</p>
+                    <p>You now have an option of receiving payments under your policy, if any, through Electronic Fund Transfer (EFT).</p>
+                </div>
+            </div>
+
+            <div style="display: flex; background-color: #d0cccc; margin-top: 2px">
+                <div>
+                    <div style="background-color: #d0cccc;">
+                        <p class="s1"><img width="50" height="50" src="Images/paste.png" /></p>
+
+                    </div>
+                </div>
+                <div style="background-color: #d0cccc;">
+                    <p style="color: red;">Get Tax benefits</p>
+                    <p>PAN number: Registered </p>
+                    <p>
+                        Depending on the policy, necessary taxes will be applicable as per the provisions of the
+                        prevailing tax laws, if the PAN is not updated then the maximum percentage of tax is
+                        applicable. Log on to our Customer Portal or call the Toll Free number to update your
+                        PAN with us.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    Disclaimer: Insurance is the subject matter of the solicitation. This is a computer generated communication and
+                    does not need a signature. UNDER THIS POLICY, THE INVESTMENT RISK IN THE INVESTMENT PORTFOLIO IS
+                    BORNE BY THE POLICYHOLDER. The Linked Insurance Products do not offer any liquidity during the first five years
+                    of the contract. The policyholder will not be able to surrender/ withdraw the monies invested in Linked Insurance
+                    Products completely or partially till the end of the fifth year. Unit Linked Life Insurance Products are different
+                    from the traditional insurance products and are subject to the risk factors. The premium paid in Unit Linked Life
+                    Insurance policies are subject to investment risks associated with capital markets and the NAVs of the units may
+                    go up or down based on the performance of fund and factors influencing the capital market and the insured are
+                    responsible for his /her decisions. Past performance is not indicative of future performance, which may be
+                    different. Future Generali India Life Insurance Company Limited is only the name of the Insurance Company and
+                    Future Generali Bima Advantage Plus is only the name of the unit linked life insurance contract and does not in
+                    any way indicate the quality of the contract, its future prospects or returns. The premium shall be adjusted on the
+                    due date even if it has been received in advance.
+                </p>
+                <p> SAC- 9971 Life Insurance Services (excluding Reinsurance Services) </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

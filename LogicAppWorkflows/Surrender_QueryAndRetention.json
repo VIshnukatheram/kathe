@@ -1,0 +1,191 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Filter_all_File_Types": {
+        "inputs": {
+          "from": "@triggerBody()?['serviceRequestTransectionData']",
+          "where": "@endsWith(item()?['TagName'],'FileType')"
+        },
+        "runAfter": {},
+        "type": "Query"
+      },
+      "For_each_for_Each_Surrender_File_Type": {
+        "actions": {
+          "Communication": {
+            "inputs": {
+              "body": "@outputs('Communication_Config').body",
+              "method": "POST",
+              "queries": {
+                "code": "@{parameters('CommunicationServiceCode')}"
+              },
+              "uri": "@{parameters('CommunicationServiceDomain')}/api/CommunicationService"
+            },
+            "runAfter": {
+              "Communication_Config": [
+                "SUCCEEDED"
+              ]
+            },
+            "runtimeConfiguration": {
+              "contentTransfer": {
+                "transferMode": "Chunked"
+              }
+            },
+            "type": "Http"
+          },
+          "Communication_Config": {
+            "inputs": {
+              "body": "@triggerBody()?['communicationPayload']",
+              "method": "POST",
+              "queries": {
+                "code": "@{parameters('CommunicationConfigCode')}",
+                "srid": "@{triggerBody()?['srvReqRefNo']}",
+                "status": "@{item().TagValue}"
+              },
+              "uri": "@{parameters('CommunicationConfigDomain')}/api/GenerateTemplate"
+            },
+            "runtimeConfiguration": {
+              "contentTransfer": {
+                "transferMode": "Chunked"
+              }
+            },
+            "type": "Http"
+          }
+        },
+        "foreach": "@body('Filter_all_File_Types')",
+        "runAfter": {
+          "Filter_all_File_Types": [
+            "SUCCEEDED"
+          ]
+        },
+        "type": "foreach"
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {},
+    "triggers": {
+      "When_a_Surrender_HTTP_request_is_received": {
+        "inputs": {
+          "method": "POST",
+          "schema": {
+            "properties": {
+              "assignedToRole": {},
+              "assignedToUser": {},
+              "branchRef": {
+                "type": "integer"
+              },
+              "callType": {
+                "type": "integer"
+              },
+              "category": {
+                "type": "integer"
+              },
+              "communicationPayload": {
+                "type": "string"
+              },
+              "createdByRef": {
+                "type": "string"
+              },
+              "createdOn": {
+                "type": "string"
+              },
+              "currentStatus": {
+                "type": "string"
+              },
+              "custRole": {
+                "type": "integer"
+              },
+              "custSignDateTime": {
+                "type": "string"
+              },
+              "customerRef": {
+                "type": "integer"
+              },
+              "deDupPayload": {},
+              "dob": {
+                "type": "string"
+              },
+              "modifiedByRef": {
+                "type": "string"
+              },
+              "modifiedOn": {
+                "type": "string"
+              },
+              "planName": {
+                "type": "string"
+              },
+              "policyRef": {
+                "type": "integer"
+              },
+              "policyStatus": {
+                "type": "string"
+              },
+              "proposerName": {
+                "type": "string"
+              },
+              "prtSerReqID": {},
+              "reasonDelayed": {},
+              "reasonForChange": {
+                "type": "string"
+              },
+              "reqMode": {
+                "type": "integer"
+              },
+              "reqSource": {
+                "type": "integer"
+              },
+              "requestDateTime": {
+                "type": "string"
+              },
+              "serviceRequestTransectionData": {
+                "items": {
+                  "properties": {
+                    "servRequestDtlId": {
+                      "type": "integer"
+                    },
+                    "srvReqID": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "tagName": {
+                      "type": "string"
+                    },
+                    "tagValue": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "servRequestDtlId",
+                    "srvReqID",
+                    "tagName",
+                    "tagValue",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "source": {},
+              "srvReqID": {
+                "type": "integer"
+              },
+              "srvReqRefNo": {
+                "type": "string"
+              },
+              "subType": {
+                "type": "integer"
+              },
+              "transactionPayload": {}
+            },
+            "type": "object"
+          }
+        },
+        "kind": "Http",
+        "type": "Request"
+      }
+    }
+  },
+  "kind": "Stateful"
+}

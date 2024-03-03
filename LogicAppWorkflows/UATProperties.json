@@ -1,0 +1,34 @@
+{
+  "CommonServiceCode": {
+      "type": "String",
+      "value": "rWGk1AwzJhud2Dphun6INrsTyQApmLaQc0VGd7y3_nD0AzFuxz0ABg=="
+  },
+  "CommonServiceDomain": {
+      "type": "String",
+      "value": "https://uatcommonservice.azurewebsites.net"
+  },
+  "CommunicationConfigCode": {
+      "type": "String",
+      "value": "-gHiMBOJjglTyEB7u6jcJOw2IosICyEtegAi627dt45jAzFuba47cQ=="
+  },
+  "CommunicationConfigDomain": {
+      "type": "String",
+      "value": "https://uatcommunicationconfig.azurewebsites.net"
+  },
+  "CommunicationServiceCode": {
+      "type": "String",
+      "value": "Qig1G3zL4Ix-BcAYRPlLbKbSpgGoCTQijgWzPgnYo7bZAzFu-zUY5g=="
+  },
+  "CommunicationServiceDomain": {
+      "type": "String",
+      "value": "https://uatcommunicationservice.azurewebsites.net"
+  },
+  "LifeAsiaAPICode": {
+      "type": "String",
+      "value": "ibbGbjJWTP-VopNDnu6Lp6S5XHcd1SwXozG7MzDsEnviAzFuM1iJIQ=="
+  },
+  "LifeAsiaDomain": {
+      "type": "String",
+      "value": "https://uatlisfeasiaapi.azurewebsites.net"
+  }
+}

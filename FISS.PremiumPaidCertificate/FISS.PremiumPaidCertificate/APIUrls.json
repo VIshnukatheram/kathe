@@ -1,0 +1,11 @@
+{
+  "LAURLS": {
+    "PPCApi": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PPC/GetPPC"
+  },
+  "CommonURLS": {
+    "Email": "https://communicationservice.azurewebsites.net/api/CommunicationService?code=iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ==",
+    //"Email": "http://localhost:7078/api/CommunicationService",
+    "BlobConnectionString": "DefaultEndpointsProtocol=https;AccountName=futuregeneralistoreage;AccountKey=5LlrTqKWPGnHT8fErvYufHelZ1Vm0D0epcdGGdnziosq4y/nAcDpGP9QtYwxZgvGSFsRgCgHLr9a+AStnUgThg==;EndpointSuffix=core.windows.net",
+    "containerName": "filesstorage"
+  }
+}

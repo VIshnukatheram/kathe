@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FG-STModels", "FG-STModels\FG-STModels.csproj", "{0E3A9A3D-052D-4915-9F67-7A8CA4C2F10C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E3A9A3D-052D-4915-9F67-7A8CA4C2F10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3A9A3D-052D-4915-9F67-7A8CA4C2F10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3A9A3D-052D-4915-9F67-7A8CA4C2F10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3A9A3D-052D-4915-9F67-7A8CA4C2F10C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3598F76-2686-4AC5-BC7E-B5E4768194FF}
+	EndGlobalSection
+EndGlobal

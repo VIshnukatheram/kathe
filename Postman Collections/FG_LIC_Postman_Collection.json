@@ -1,0 +1,3465 @@
+{
+	"info": {
+		"_postman_id": "38839167-4c73-4fa3-9312-62cb0fd8120a",
+		"name": "FG-LIC APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LIFE-ASIA",
+			"item": [
+				{
+					"name": "Payment Link",
+					"id": "eacfe3c8-b0fd-4812-ac70-23f65f00f9ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"policyNo\": \"00106760\",\r\n        \"applicationNo\": \"\",\r\n        \"dob\": \"\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentmode\": \"SI\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink"
+					},
+					"response": []
+				},
+				{
+					"name": "GetSurrenderEnquiry",
+					"id": "65186f78-2045-408c-8305-dce735a1e34d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"policyNo\": \"00106760\",\r\n        \"applicationNo\": \"\",\r\n        \"dob\": \"\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentmode\": \"SI\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client Enquirey",
+					"id": "a92222c4-ae0b-4702-8a08-c28bc6de0dd9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"policyNo\": \"00106760\",\r\n        \"applicationNo\": \"\",\r\n        \"dob\": \"\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentmode\": \"SI\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink"
+					},
+					"response": []
+				},
+				{
+					"name": "Search API",
+					"id": "affdc6ee-ccfb-413d-af5f-5d06f8a89f09",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestheader\": {\r\n        \"source\": \"POS\",\r\n        \"policyNo\": \"\",\r\n        \"applicationNo\": \"F11028703\"\r\n      \r\n    },\r\n    \"requestBody\": {\r\n        \"mobileNo\": \"\",\r\n        \"emailID\": \"\",\r\n        \"pan\": \"\",\r\n        \"customerID\": \"50079867\",\r\n        \"firstName\": \"\",\r\n        \"middleName\": \"\",\r\n        \"lastName\": \"\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/SearchAPI/GetSearchAPI"
+					},
+					"response": []
+				},
+				{
+					"name": "Primium Amount",
+					"id": "f16bdaca-45fe-4a1a-b16b-d422fc223cb9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"rpandya\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"25/12/2024\"\r\n    },\r\n    \"requestbody\": {\r\n        \"policyNo\": \"00107063\",\r\n        \"effectiveDate\": \"20241225\",\r\n        \"action\": \"A\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PremiumEnquiry/GetPremiumEnquiry"
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Mobile Num Update",
+					"id": "5fdfdbf7-95c7-4a0e-9c06-20d6316e0209",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"WEBSITE\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\"\r\n    },\r\n    \"requestBody\": {\r\n        \"clientNo\": \"50144187\",\r\n        \"mobileNo\": \"8143814905\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/MobileNoUpdate?Ocp-Apim-Subscription-Key=dc2821ba8f7a42e291c8e473aedafadb",
+							"protocol": "https",
+							"host": [
+								"lfagentapigw-rsg",
+								"azure-api",
+								"net"
+							],
+							"path": [
+								"POSMicroservice",
+								"PolicyServicing",
+								"api",
+								"ContactUpdate",
+								"MobileNoUpdate"
+							],
+							"query": [
+								{
+									"key": "Ocp-Apim-Subscription-Key",
+									"value": "dc2821ba8f7a42e291c8e473aedafadb"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DMS File Upload",
+					"id": "6e31364a-26a6-4a38-8694-71f721f84e63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request",
+									"value": "{\n\t\"requestHeader\": {\n\t\t\"source\": \"POS\",\n\t\t\"policyNo\": \"00013374\",\n\t\t\"applicationNo\": \"223344\",\n\t\t\"dob\": \"06/06/1997\"\n\t},\n\t\"requestBody\": {\n\t\t\"userid\": \"1139658\",\n\t\t\"indexName\": \"Claim Communications\",\n\t\t\"documentName\": \"sample1.pdf\",\n\t\t\"documentBytes\": \"\"\n\t}\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/NICHEBIT/Downloads/SR202311301306228607-20231130130651.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/DMS/MoveToDMSFile",
+							"protocol": "https",
+							"host": [
+								"lfagentapigw-rsg",
+								"azure-api",
+								"net"
+							],
+							"path": [
+								"POSMicroservice",
+								"Generic",
+								"api",
+								"DMS",
+								"MoveToDMSFile"
+							],
+							"query": [
+								{
+									"key": "request",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Office No Update",
+					"id": "54a24c1c-f553-48d0-8aa8-8f7a7d040f9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"WEBSITE\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\"\r\n    },\r\n    \"requestBody\": {\r\n        \"clientNo\": \"50144187\",\r\n        \"officeNo\": \"9876543210\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/OfficeNoUpdate"
+					},
+					"response": []
+				},
+				{
+					"name": "Home No Update",
+					"id": "8c5c354a-009a-4bc6-bb87-d5c8d5418671",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"WEBSITE\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\"\r\n    },\r\n    \"requestBody\": {\r\n        \"clientNo\": \"50144187\",\r\n         \"homeNo\": \"9874563210\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/HomeNoUpdate"
+					},
+					"response": []
+				},
+				{
+					"name": "Email Update",
+					"id": "1eb98e42-d196-415a-91bc-c087b40e6fc5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"WEBSITE\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\"\r\n    },\r\n    \"requestBody\": {\r\n        \"clientNo\": \"50144187\",\r\n         \"emailid\": \"abc@gmail.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/EmailUpdate"
+					},
+					"response": []
+				},
+				{
+					"name": "DeDup Email",
+					"id": "56d848ad-213b-409f-8684-1152f980e0ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailAddress\":\"ashish.t@futuregenerali.in\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Dedupe/GetEmailDedupeAPI"
+					},
+					"response": []
+				},
+				{
+					"name": "DeDup Mobile",
+					"id": "df4f24cb-452e-418f-805e-a39bd78c95e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobileNo\":\"9892686867\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Dedupe/GetMobileDedupeAPI"
+					},
+					"response": []
+				},
+				{
+					"name": "NLP",
+					"id": "fc5541d6-d9ee-4137-985b-42c43ce4111f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"source\": \"aiteam\",\r\n    \"email\": \"m: Anil Gandhi (anilgclicks@gmail.com) Date: 1/13/2022 2:28 PM To:deepak.menon@futuregenerali.in (deepak.menon@futuregenerali.in); gro@futuregenerali.in (gro@futuregenerali.in); care@futuregenerali.in (care@futuregenerali.in ); Cc: Subject:Complain against policy fraud **** CAUTION: The email you have received is sent by someone outside of the organization. Be cautious while opening attachments or clicking on links from unknown senders or when received from an unexpected sender. ****  Hi ,  My self Anil Hiralal Gandhi. I am reside at Dadar.I have policy in your company which is ULIP plan ( policy no - 01060517). Once I have call from Future Generali India Life insurance Mrs. Manasvi parvate. She is took meeting from me and She came at my home and told me I will give a bonus from your policy She took my ULIP policy bond (01060517) and all documents (adhar card pan card & cheque). After that she withdraw 1 lakh rupees from my ulip policy without my concern.i don't have any idea about that. She did two partial withdraw  1st on 09/08/2019 2nd on 18/12/2021 I really don't know about this And open a new policy's which is (0157051, 01549201) I am 73 year old senior citizen my medical Condition is very down. After 1 year She again came at my home  And take a new cheque without company naming.which is Rs 5302/-  Then again she did partial withdraw rupees 88,000 and paid a renewal in policy no.01577051 I really don't know because I haven't received any policy receipts and acknowledgment. When I received both new policy bond. Then I shocked about this  I don't give any authority to her. I want to request complaint department  Please take a strict action against Mrs. Mansavi Parvte (80161788) Mrs. Shraddha Gosavi (80130748) she is reporting manager.  So I request to you Mrs Mansavi parvate doing fraud with me  I want my all money from this policy.  Please asap revert on this.   Thanks Regards  Anil Gandhi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://172.20.8.11:8083/api/email/classification/customerservice"
+					},
+					"response": [
+						{
+							"id": "17cb5b36-5f3f-4afe-9add-3518b3276322",
+							"name": "NLP",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"source\": \"aiteam\",\r\n    \"email\": \"m: Anil Gandhi (anilgclicks@gmail.com) Date: 1/13/2022 2:28 PM To:deepak.menon@futuregenerali.in (deepak.menon@futuregenerali.in); gro@futuregenerali.in (gro@futuregenerali.in); care@futuregenerali.in (care@futuregenerali.in ); Cc: Subject:Complain against policy fraud **** CAUTION: The email you have received is sent by someone outside of the organization. Be cautious while opening attachments or clicking on links from unknown senders or when received from an unexpected sender. ****  Hi ,  My self Anil Hiralal Gandhi. I am reside at Dadar.I have policy in your company which is ULIP plan ( policy no - 01060517). Once I have call from Future Generali India Life insurance Mrs. Manasvi parvate. She is took meeting from me and She came at my home and told me I will give a bonus from your policy She took my ULIP policy bond (01060517) and all documents (adhar card pan card & cheque). After that she withdraw 1 lakh rupees from my ulip policy without my concern.i don't have any idea about that. She did two partial withdraw  1st on 09/08/2019 2nd on 18/12/2021 I really don't know about this And open a new policy's which is (0157051, 01549201) I am 73 year old senior citizen my medical Condition is very down. After 1 year She again came at my home  And take a new cheque without company naming.which is Rs 5302/-  Then again she did partial withdraw rupees 88,000 and paid a renewal in policy no.01577051 I really don't know because I haven't received any policy receipts and acknowledgment. When I received both new policy bond. Then I shocked about this  I don't give any authority to her. I want to request complaint department  Please take a strict action against Mrs. Mansavi Parvte (80161788) Mrs. Shraddha Gosavi (80130748) she is reporting manager.  So I request to you Mrs Mansavi parvate doing fraud with me  I want my all money from this policy.  Please asap revert on this.   Thanks Regards  Anil Gandhi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://172.20.8.11:8083/api/email/classification/customerservice"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.3.6 Python/3.8.16"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Dec 2023 12:34:29 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3515"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Content-Type,Content-Length,Authorization,X-Pagination"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"email\": \"m: Anil Gandhi (anilgclicks@gmail.com) Date: 1/13/2022 2:28 PM To:deepak.menon@futuregenerali.in (deepak.menon@futuregenerali.in); gro@futuregenerali.in (gro@futuregenerali.in); care@futuregenerali.in (care@futuregenerali.in ); Cc: Subject:Complain against policy fraud **** CAUTION: The email you have received is sent by someone outside of the organization. Be cautious while opening attachments or clicking on links from unknown senders or when received from an unexpected sender. ****  Hi ,  My self Anil Hiralal Gandhi. I am reside at Dadar.I have policy in your company which is ULIP plan ( policy no - 01060517). Once I have call from Future Generali India Life insurance Mrs. Manasvi parvate. She is took meeting from me and She came at my home and told me I will give a bonus from your policy She took my ULIP policy bond (01060517) and all documents (adhar card pan card & cheque). After that she withdraw 1 lakh rupees from my ulip policy without my concern.i don't have any idea about that. She did two partial withdraw  1st on 09/08/2019 2nd on 18/12/2021 I really don't know about this And open a new policy's which is (0157051, 01549201) I am 73 year old senior citizen my medical Condition is very down. After 1 year She again came at my home  And take a new cheque without company naming.which is Rs 5302/-  Then again she did partial withdraw rupees 88,000 and paid a renewal in policy no.01577051 I really don't know because I haven't received any policy receipts and acknowledgment. When I received both new policy bond. Then I shocked about this  I don't give any authority to her. I want to request complaint department  Please take a strict action against Mrs. Mansavi Parvte (80161788) Mrs. Shraddha Gosavi (80130748) she is reporting manager.  So I request to you Mrs Mansavi parvate doing fraud with me  I want my all money from this policy.  Please asap revert on this.   Thanks Regards  Anil Gandhi\",\n  \"entities\": [\n    \"gandhi\",\n    \"PERSON\"\n  ],\n  \"errorcode\": false,\n  \"errormessage\": \"\",\n  \"executiontime\": \"2819815487.833\",\n  \"keywords\": NaN,\n  \"models\": {\n    \"ctst\": [\n      {\n        \"confidencescore\": 0.98,\n        \"errormessage\": \"\",\n        \"other_class\": {\n          \"Escalation Mechanism / Grievance Redressal Procedure\": 0.98,\n          \"Surrender Process Enquiry\": 0.01\n        },\n        \"predictedclass\": \"escalation mechanism / grievance redressal procedure\",\n        \"predictedlabel\": 2,\n        \"predictionstatus\": true\n      }\n    ],\n    \"life\": [\n      {\n        \"confidencescore\": \"100.0\",\n        \"errormessage\": \"\",\n        \"predictedclass\": \"life\",\n        \"predictedlabel\": \"0\",\n        \"predictionstatus\": true\n      }\n    ],\n    \"nar\": [\n      {\n        \"confidencescore\": \"99.9\",\n        \"errormessage\": \"\",\n        \"predictedclass\": \"ham\",\n        \"predictedlabel\": \"0\",\n        \"predictionstatus\": true\n      }\n    ]\n  },\n  \"preprocessedemail\": \"anil  complain  anil hiralal gandhi  company ulip call surance mrs manasvi parvate meet home give bonus ulip bond  adhar card pan card withdraw lakh rupee ulip idea partial withdraw st open year senior citizen medical condition year home company rs partial withdraw rupee pay renewal receive receipt acknowledgment receive bond shock give authority request complaint department strict action mrs mansavi parvte mrs shraddha gosavi report manager request mrs mansavi parvate fraud money asap revert anil gandhi\",\n  \"subject\": \"complain fraud\",\n  \"uid\": \"e7a28858-05a4-47d8-928d-4d7386bd5271\"\n}\n"
+						}
+					]
+				},
+				{
+					"name": "PayeeCode-Authorization",
+					"id": "a6a55de5-213e-4372-bdeb-b14d1582f2e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"rpandya\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"10/11/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentnum\": \"000409091\",\r\n        \"chqdup\": \"00000172\",\r\n        \"passwd\": \"Welcome#\",\r\n        \"zcrtdate\": \"08/19/2021\",\r\n        \"zneftno\": \"19\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PayeeCode/GetPayeeCode_Authorization"
+					},
+					"response": []
+				},
+				{
+					"name": "PayeeCode-Approval",
+					"id": "cac8abb8-489e-47cd-996a-e8e6f05cfae0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"F1133114\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"07/11/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentnum\": \"000411336\", // Form Payee Creation\r\n        \"passwd\": \"abc\" // Password form UI of Approver\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PayeeCode/GetPayeeCode_Approver"
+					},
+					"response": [
+						{
+							"id": "4feb00a6-211f-4e2e-bb36-8888e073f604",
+							"name": "PayeeCode-Approval",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"F1133114\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"07/11/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"paymentnum\": \"000411330\", // Form Payee Creation\r\n        \"passwd\": \"abc\" // Password form UI of Approver\r\n    }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PayeeCode/GetPayeeCode_Approver"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinity=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinitySameSite=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;SameSite=None;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:b4d78ba0-ec15-4dcf-ac09-1e5245ed967b"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Dec 2023 13:21:28 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"responseHeader\": {\n        \"issuccess\": true,\n        \"message\": \"Success\",\n        \"errorcode\": \"0\"\n    },\n    \"responseBody\": {\n        \"reqno\": \"\",\n        \"zcrtdatE1\": \"\",\n        \"zneftno\": \"\",\n        \"zprsncde\": \"\",\n        \"errorMessage\": \"Reqn already authorised\",\n        \"errorCode\": \"1\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "PayeeCode-Creation",
+					"id": "4edf01e6-e053-4955-a168-6a06ceb68472",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"requestHeader\": {\r\n    \"source\": \"POS\",\r\n    \"carrierCode\": \"2\",\r\n    \"branch\": \"PRA\",\r\n    \"userId\": \"website\",\r\n    \"userRole\": \"10\",\r\n    \"partnerId\": \"MSPOS\",\r\n    \"processId\": \"POS\",\r\n    \"monthendExtension\": \"N\",\r\n    \"monthendDate\": \"07/11/2023\"\r\n  },\r\n  \"requestBody\": {\r\n    \"payeesel\": \"50101855\", // CLient Id of PA\r\n    \"amount\": \"400\", \r\n    \"contractno\": \"00065698\", // Policy No\r\n    \"subactype\": \"PS\",\r\n    \"reqntype\": \"SURENDER\" // Key in Doc for Surrender\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PayeeCode/GetPayeeCode_Creation"
+					},
+					"response": [
+						{
+							"id": "75072b5e-8bba-41f7-b57b-4cf87879132d",
+							"name": "PayeeCode-Creation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"requestHeader\": {\r\n    \"source\": \"POS\",\r\n    \"carrierCode\": \"2\",\r\n    \"branch\": \"PRA\",\r\n    \"userId\": \"website\",\r\n    \"userRole\": \"10\",\r\n    \"partnerId\": \"MSPOS\",\r\n    \"processId\": \"POS\",\r\n    \"monthendExtension\": \"N\",\r\n    \"monthendDate\": \"07/11/2023\"\r\n  },\r\n  \"requestBody\": {\r\n    \"payeesel\": \"50101855\", // CLient Id of PA\r\n    \"amount\": \"400\",  \r\n    \"contractno\": \"00065698\", // Policy No\r\n    \"subactype\": \"PS\",\r\n    \"reqntype\": \"PARTWTDL\" // Key in Doc for Surrender\r\n  }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PayeeCode/GetPayeeCode_Creation"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinity=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinitySameSite=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;SameSite=None;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:b4d78ba0-ec15-4dcf-ac09-1e5245ed967b"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Dec 2023 13:20:17 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"responseHeader\": {\n        \"issuccess\": true,\n        \"message\": \"Success\",\n        \"errorcode\": \"0\"\n    },\n    \"responseBody\": {\n        \"payeecode\": \"000411335\",\n        \"errorMessage\": \"\",\n        \"errorCode\": \"0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Surrender Approval",
+					"id": "2ffc689e-7f7c-46b0-b9d7-e21147d16a47",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"meDate\": \"\"\r\n    },\r\n    \"requestBody\": {\r\n        \"policyNo\": \"00110837\",\r\n        \"zposT3PM1\": \"N\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Surrender/api/Surrender/GetSurrenderApprover"
+					},
+					"response": []
+				},
+				{
+					"name": "Surrender Registration",
+					"id": "a770b0e8-323a-4396-a440-79347842ef64",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"requestHeader\": {\r\n    \"source\": \"POS\",\r\n    \"carrierCode\": \"2\",\r\n    \"branch\": \"PRA\",\r\n    \"userId\": \"Website\",\r\n    \"userRole\": \"10\",\r\n    \"partnerId\": \"POS\",\r\n    \"processId\": \"POS\",\r\n    \"monthendExtension\": \"N\",\r\n    \"monthendDate\": \"\"\r\n  },\r\n  \"requestBody\": {\r\n    \"policyNo\": \"90000325\",\r\n    \"effDate\": \"20/09/2023\",\r\n    \"otheradjst\": \"\",\r\n    \"reasndesc\": \"test\",\r\n    \"reasoncd\": \"\",\r\n    \"zposT3PM1\": \"N\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Surrender/api/Surrender/GetSurrenderRegister"
+					},
+					"response": []
+				},
+				{
+					"name": "Fund Switch Enquiry",
+					"id": "cea54f7c-fff0-41aa-9dd5-f576ceb9eb46",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"18/10/2023\"\r\n    },\r\n    \"requestbody\": {\r\n        \"Policyno\": \"00013374\",\r\n        \"EffectiveDate\": \"20231124\",\r\n        \"PCAMTIND\": \"P\",\r\n        \"ZPOST3PM\": \"N\",\r\n        \"perCentAmount\": {\r\n            \"perCentAmount1\": 50,\r\n            \"perCentAmount2\": 0,\r\n            \"perCentAmount3\": 0,\r\n            \"perCentAmount4\": 0,\r\n            \"perCentAmount5\": 0,\r\n            \"perCentAmount6\": 0,\r\n            \"perCentAmount7\": 0,\r\n            \"perCentAmount8\": 0,\r\n            \"perCentAmount9\": 0,\r\n            \"perCentAmount10\": 0\r\n        },\r\n        \"orswchfe\": \"N\",\r\n        \"targetPercent\": {\r\n            \"targetPercent1\": 100,\r\n            \"targetPercent2\": 0,\r\n            \"targetPercent3\": 0,\r\n            \"targetPercent4\": 0,\r\n            \"targetPercent5\": 0,\r\n            \"targetPercent6\": 0,\r\n            \"targetPercent7\": 0,\r\n            \"targetPercent8\": 0,\r\n            \"targetPercent9\": 0,\r\n            \"targetPercent10\": 0\r\n        },\r\n        \"fundFrom\": {\r\n            \"fundFrom1\": \"FINC\",\r\n            \"fundFrom2\": \"\",\r\n            \"fundFrom3\": \"\",\r\n            \"fundFrom4\": \"\",\r\n            \"fundFrom5\": \"\",\r\n            \"fundFrom6\": \"\",\r\n            \"fundFrom7\": \"\",\r\n            \"fundFrom8\": \"\",\r\n            \"fundFrom9\": \"\",\r\n            \"fundFrom10\": \"\"\r\n        },\r\n        \"fundTo\": {\r\n            \"fundTo1\": \"FSEC\",\r\n            \"fundTo2\": \"\",\r\n            \"fundTo3\": \"\",\r\n            \"fundTo4\": \"\",\r\n            \"fundTo5\": \"\",\r\n            \"fundTo6\": \"\",\r\n            \"fundTo7\": \"\",\r\n            \"fundTo8\": \"\",\r\n            \"fundTo9\": \"\",\r\n            \"fundTo10\": \"\"\r\n        }\r\n    }\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FundSwitch/GetFundSwitchEnquiry"
+					},
+					"response": []
+				},
+				{
+					"name": "Fund Switch Create",
+					"id": "13666137-65eb-4f63-8e2c-61d37c901dd7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"18/10/2023\"\r\n    },\r\n    \"requestbody\": {\r\n        \"Policyno\": \"00013374\",\r\n        \"EffectiveDate\": \"20231124\", // today\r\n        \"PCAMTIND\": \"P\",\r\n        \"ZPOST3PM\": \"N\",\r\n        \"perCentAmount\": { // From Percentage\r\n            \"perCentAmount1\": 50,\r\n            \"perCentAmount2\": 0,\r\n            \"perCentAmount3\": 0,\r\n            \"perCentAmount4\": 0,\r\n            \"perCentAmount5\": 0,\r\n            \"perCentAmount6\": 0,\r\n            \"perCentAmount7\": 0,\r\n            \"perCentAmount8\": 0,\r\n            \"perCentAmount9\": 0,\r\n            \"perCentAmount10\": 0\r\n        },\r\n        \"orswchfe\": \"N\",\r\n        \"targetPercent\": { // To Percentage\r\n            \"targetPercent1\": 100,\r\n            \"targetPercent2\": 0,\r\n            \"targetPercent3\": 0,\r\n            \"targetPercent4\": 0,\r\n            \"targetPercent5\": 0,\r\n            \"targetPercent6\": 0,\r\n            \"targetPercent7\": 0,\r\n            \"targetPercent8\": 0,\r\n            \"targetPercent9\": 0,\r\n            \"targetPercent10\": 0\r\n        },\r\n        \"fundFrom\": {\r\n            \"fundFrom1\": \"FSEC\",\r\n            \"fundFrom2\": \"\",\r\n            \"fundFrom3\": \"\",\r\n            \"fundFrom4\": \"\",\r\n            \"fundFrom5\": \"\",\r\n            \"fundFrom6\": \"\",\r\n            \"fundFrom7\": \"\",\r\n            \"fundFrom8\": \"\",\r\n            \"fundFrom9\": \"\",\r\n            \"fundFrom10\": \"\"\r\n        },\r\n        \"fundTo\": {\r\n            \"fundTo1\": \"FINC\",\r\n            \"fundTo2\": \"\",\r\n            \"fundTo3\": \"\",\r\n            \"fundTo4\": \"\",\r\n            \"fundTo5\": \"\",\r\n            \"fundTo6\": \"\",\r\n            \"fundTo7\": \"\",\r\n            \"fundTo8\": \"\",\r\n            \"fundTo9\": \"\",\r\n            \"fundTo10\": \"\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FundSwitch/GetFundSwitchCreate"
+					},
+					"response": []
+				},
+				{
+					"name": "Fund Switch Value",
+					"id": "bea20cc5-ed22-4001-a358-b62d03a95c85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"18/10/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"policyno\": \"00013374\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FundSwitch/GetFundValue"
+					},
+					"response": [
+						{
+							"id": "5f131484-8c72-4226-bb2d-496b540f9835",
+							"name": "Fund Switch Enquiry & Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dc2821ba8f7a42e291c8e473aedafadb ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"18/10/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"policyno\": \"00013374\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FundSwitch/GetFundValue"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinity=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinitySameSite=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;SameSite=None;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:b4d78ba0-ec15-4dcf-ac09-1e5245ed967b"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 15:11:55 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"responseHeader\": {\n        \"issuccess\": true,\n        \"message\": \"Success\",\n        \"errorcode\": \"0\"\n    },\n    \"responseBody\": {\n        \"chdrnum\": \"00013374\",\n        \"fundValue\": [\n            {\n                \"vrtfund\": \"FOPP\",\n                \"fndshrtdsc\": \"FOPP\",\n                \"curuntbal\": \"32889.76103\",\n                \"fundtype\": \"A\",\n                \"unitprice\": \"9.75000\",\n                \"curuntval\": \"320675.17\",\n                \"effectivedate\": \"20230920\"\n            },\n            {\n                \"vrtfund\": \"FSEC\",\n                \"fndshrtdsc\": \"FSEC\",\n                \"curuntbal\": \"822.24403\",\n                \"fundtype\": \"A\",\n                \"unitprice\": \"11.00000\",\n                \"curuntval\": \"9044.68\",\n                \"effectivedate\": \"20191022\"\n            },\n            {\n                \"vrtfund\": \"FAPX\",\n                \"fndshrtdsc\": \"FAPX\",\n                \"curuntbal\": \"21062.60821\",\n                \"fundtype\": \"A\",\n                \"unitprice\": \"15.00000\",\n                \"curuntval\": \"315939.12\",\n                \"effectivedate\": \"20231221\"\n            },\n            {\n                \"vrtfund\": \"FBAL\",\n                \"fndshrtdsc\": \"FBAL\",\n                \"curuntbal\": \"15171.43051\",\n                \"fundtype\": \"A\",\n                \"unitprice\": \"8.00000\",\n                \"curuntval\": \"121371.44\",\n                \"effectivedate\": \"20231217\"\n            },\n            {\n                \"vrtfund\": \"FINC\",\n                \"fndshrtdsc\": \"FINC\",\n                \"curuntbal\": \"70991.22396\",\n                \"fundtype\": \"A\",\n                \"unitprice\": \"25.00000\",\n                \"curuntval\": \"1774780.60\",\n                \"effectivedate\": \"20231221\"\n            }\n        ],\n        \"errorcode\": \"00013374\",\n        \"errormessage\": \"\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "OFAC (Negative List)",
+					"id": "0ac13598-9d34-47f8-99af-a249c1573e50",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"policyNo\": \"\",\r\n        \"applicationNo\": \"\",\r\n        \"dob\": \"string\"\r\n    },\r\n    \"requestBody\": {\r\n        \"searchtype\": \"C\",\r\n        \"lastName\": null,\r\n        \"percentage\": 0,\r\n        \"percentageCIP\": 0,\r\n        \"type\": null,\r\n        \"country\": null,\r\n        \"dob\": null,\r\n        \"name\": \"Hannibal Hannibal GADDAFI GHATHAFI\",\r\n        \"applicationNo\": \"PQR67890\",\r\n        \"createdby\": null,\r\n        \"source\": null,\r\n        \"panNo\": null,\r\n        \"passportNo\": null,\r\n        \"employercheck\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Ofac/GetOFACDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "Loan Registration",
+					"id": "db57a548-1bd4-40df-976c-b99907bc4b97",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00107064\",\r\n        \"EffectiveDate\": \"11/23/2023\",\r\n        \"PRTFLAG\": \"N\",\r\n        \"LoanAmount\": 50000.00,\r\n        \"PReasonCode\": \"\",\r\n        \"DOCRCVD\": \"Y\",\r\n        \"DReasonCode\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Loan/LoanRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Loan Repayment",
+					"id": "ccf97a6f-d36f-4e7d-a45d-3e872c5a2fd9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00110394\",\r\n        \"pFlag\": \"Y\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Loan/LoanRepayment"
+					},
+					"response": []
+				},
+				{
+					"name": "Loan Enquiry Document",
+					"id": "6aa1ecda-ba02-4c79-9672-fe1c1fb790df",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"F1135010\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00110308\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/LoanENQ/LoanEnquiry"
+					},
+					"response": [
+						{
+							"id": "6a26f94c-8ed6-4d4b-8bbe-dcb625790d68",
+							"name": "Loan Enquiry Document",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dc2821ba8f7a42e291c8e473aedafadb",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"F1135010\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00110308\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/LoanENQ/LoanEnquiry"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinity=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinitySameSite=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;SameSite=None;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:b4d78ba0-ec15-4dcf-ac09-1e5245ed967b"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Dec 2023 06:44:10 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"responseHeader\": {\n        \"issuccess\": true,\n        \"message\": \"Success\",\n        \"errorcode\": \"0\"\n    },\n    \"responseBody\": {\n        \"loanDetails\": [\n            {\n                \"errorcode\": \"0\",\n                \"btdate\": \"20240728\",\n                \"chdrnum\": \"00110308\",\n                \"chdrstatus\": \"In Force\",\n                \"cnttype\": \"E23\",\n                \"cownnum\": \"50161450\",\n                \"ctypedes\": \"Future Anand\",\n                \"effdate\": \"20231218\",\n                \"hpleamt\": \"47102\",\n                \"hpleint\": \"5008\",\n                \"hpletot\": \"521\",\n                \"intanny\": \"10.00\",\n                \"lifedesc\": \"Naik, Vinay\",\n                \"lifenum\": \"50161450\",\n                \"loanallow\": \"9481\",\n                \"numloans\": \"1\",\n                \"ownerdesc\": \"Naik, Vinay\",\n                \"premstatus\": \"Prm Paying\",\n                \"ptdate\": \"20240728\",\n                \"surrval\": \"68435\",\n                \"cntcurr\": \"INR\",\n                \"hacrint\": \"0\",\n                \"hcurbal\": \"47102\",\n                \"hpltot\": \"52110\",\n                \"hpndint\": \"76\",\n                \"hprincipal\": \"47102\",\n                \"loannumber\": \"1\",\n                \"loanstdate\": \"20220828\",\n                \"loantype\": \"P\",\n                \"numcon\": \"0\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Loan Statement",
+					"id": "6bc2c2fc-0811-4b6c-b048-06004e47613a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00110394\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Loan/LoanStatement"
+					},
+					"response": [
+						{
+							"id": "dec254a4-5347-46bf-b201-579746d43ceb",
+							"name": "Loan Statement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dc2821ba8f7a42e291c8e473aedafadb",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00110394\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Loan/LoanStatement"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinity=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "ARRAffinitySameSite=414688911d296664bb8b298447cd648e91e966b07507f658ba7d33773b5782c5;Path=/;HttpOnly;SameSite=None;Secure;Domain=microservicesposuat.azurewebsites.net"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:b4d78ba0-ec15-4dcf-ac09-1e5245ed967b"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Dec 2023 06:41:16 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"responseHeader\": {\n        \"issuccess\": true,\n        \"message\": \"Success\",\n        \"errorcode\": \"0\"\n    },\n    \"responseBody\": {\n        \"chdrnum\": \"00110394\",\n        \"hpleamt\": \"19123.69\",\n        \"hpleint\": \"66.48\",\n        \"hpletot\": \"19190.17\",\n        \"intanny\": \"10.00\",\n        \"errorCode\": \"0\",\n        \"errormessage\": \"Success\",\n        \"listDetails\": [\n            {\n                \"loannumber\": \"000001\",\n                \"hprincipal\": \"31227.00\",\n                \"hpltot\": \"19190.17\",\n                \"zldate\": \"20231205\",\n                \"zlpamt\": \"3314.06\",\n                \"zlamount\": \"1685.94\",\n                \"ttpayamt\": \"5000.00\"\n            },\n            {\n                \"loannumber\": \"000001\",\n                \"hprincipal\": \"31227.00\",\n                \"hpltot\": \"19190.17\",\n                \"zldate\": \"20230227\",\n                \"zlpamt\": \"8789.25\",\n                \"zlamount\": \"1210.75\",\n                \"ttpayamt\": \"10000.00\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Loan Approval",
+					"id": "5d072395-ccb0-4cb6-ad96-4f6c70b7e1bf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"pra\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"MonthendDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00107064\",\r\n        \"EffectiveDate\": \"11/23/2023\",\r\n        \"otherAdjustments\": 0,\r\n        \"methodOfPayment\": \"C\",\r\n        \"bankAccountNumber\": \"\",\r\n        \"bankKey\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/Loan/LoanApproval"
+					},
+					"response": []
+				},
+				{
+					"name": "FreeLook Approval",
+					"id": "b910e88b-2153-4c95-ac72-815be9069cd8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"Branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"09/12/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"action\": \"E\",\r\n        \"policyNumber\": \"00110311\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FreelookApproval/GetFreelookApproval"
+					},
+					"response": []
+				},
+				{
+					"name": "FreeLook Registration",
+					"id": "6735869b-ec6e-4856-a472-338ceeb6efe5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"source\": \"POS\",\r\n        \"carrierCode\": \"2\",\r\n        \"Branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"partnerId\": \"MSPOS\",\r\n        \"processId\": \"POS\",\r\n        \"monthendExtension\": \"N\",\r\n        \"monthendDate\": \"09/12/2023\"\r\n    },\r\n    \"requestBody\": {\r\n        \"policyNumber\": \"00111101\",\r\n        \"effectiveDate\": \"20231207\",\r\n        \"sduty\": \"43\",\r\n        \"zmedcost\": \"\",\r\n        \"zothcost\": \"\",\r\n        \"zposT3PM\": \"N\",\r\n        \"zuprcadj\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/FreelookApproval/FreelookCancellationRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "DMS Get API",
+					"id": "66f6120e-df8e-4696-abca-f3a5616d5eb8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dmsuat.fglife.in:8443/omnidocs/WebApiRequestRedirection?Application=FutureGenerali&cabinetName=FG&sessionIndexSet=false&DataClassName=Future_Generali&DC.Application_no=F11028703",
+							"protocol": "http",
+							"host": [
+								"dmsuat",
+								"fglife",
+								"in"
+							],
+							"port": "8443",
+							"path": [
+								"omnidocs",
+								"WebApiRequestRedirection"
+							],
+							"query": [
+								{
+									"key": "Application",
+									"value": "FutureGenerali"
+								},
+								{
+									"key": "cabinetName",
+									"value": "FG"
+								},
+								{
+									"key": "sessionIndexSet",
+									"value": "false"
+								},
+								{
+									"key": "DataClassName",
+									"value": "Future_Generali"
+								},
+								{
+									"key": "DC.Application_no",
+									"value": "F11028703"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DMS Download",
+					"id": "09f75c41-0c0c-4ab6-9e60-658f66f02fe1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestheader\": {\r\n        \"source\": \"POS\",\r\n        \"policyno\": \"01641879\",\r\n        \"ApplicationNo\": \"FAC000001\",\r\n        \"dob\": \"06/06/1997\"\r\n    },\r\n    \"requestbody\": {\r\n        \"IndexName\": \"ClaimIntiClaimant Details\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/DMSDownloadAPI/getDMSDocuments"
+					},
+					"response": []
+				}
+			],
+			"id": "313581c6-ba4b-4adf-b57e-a9a5b9d8ce66"
+		},
+		{
+			"name": "NICHE",
+			"item": [
+				{
+					"name": "FIle Upload",
+					"id": "3e08c48c-40da-4938-aa3f-76269f639090",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"type": "file",
+									"src": "/C:/Users/NICHEBIT/Downloads/Unit Statement Mailer.html"
+								},
+								{
+									"key": "Code",
+									"value": "{ \"krishna\":\"vales\"}",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://fgliccommonserviceapi.azurewebsites.net/api/InsertBlob?code=giKcrELyZeQj6iEVl101KQPYc21n1rsfCjj1g3P4137JAzFuyRzyog==&clientId=commService",
+							"protocol": "https",
+							"host": [
+								"fgliccommonserviceapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"InsertBlob"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "giKcrELyZeQj6iEVl101KQPYc21n1rsfCjj1g3P4137JAzFuyRzyog=="
+								},
+								{
+									"key": "clientId",
+									"value": "commService"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Surrender Query",
+					"id": "4843a640-39ca-4321-8fb2-0389c25ac2f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"CallType\": 9,\r\n\t\"SubType\": 3,\r\n    \"Category\": 1,\r\n\t\"RequestSource\": 1,\r\n\t\"RequestChannel\": 3,\r\n\t\"ApplicationNo\": \"VWX67890\",\r\n\t\"PolicyNo\": \"00107910\",\r\n     \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n\t\"proposerName\": \"Kavita Musale\",\r\n\t\"policyStatus\": \"IF\",\r\n\t\"plan\": \"FG Care Plus - Amex           \",\r\n\t\"DOB\": \"08/01/1981\",\r\n\t\"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CreatedByRef\": \"Venkat\",\r\n\t\"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"ModifiedByRef\": \"Test123\",\r\n\t\"AssignedToRole\": \"\",\r\n\t\"AssignedByUser\": 0,\r\n\t\"ReasonForChange\": \"\",\r\n\t\"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n\t\"TransactionData\": [\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"TotalSurrenderValue\",\r\n\t\t\t\"TagValue\": \"1000\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ProductUIN\",\r\n\t\t\t\"TagValue\": \"1212\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderDate\",\r\n\t\t\t\"TagValue\": \"2023-12-04T05:18:04.546Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"SURRENDERPROCESS\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"UNITSTATEMENT\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"SURRENDERVALUE\"\r\n\t\t}\r\n\t],\r\n\t\"Uploads\": [],\r\n\t\"CommunicationRequest\": [\r\n\t\t{\r\n\t\t\t\"SrvReqRefNo\": \"\",\r\n\t\t\t\"TemplateID\": \"\",\r\n\t\t\t\"CommType\": 2,\r\n\t\t\t\"ReceipientTo\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"ReceipientCC\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"MobileNos\": \"\",\r\n\t\t\t\"ScheduledTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"CommBody\": \"\",\r\n\t\t\t\"Attachments\": null\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Surrender Retention",
+					"id": "28f66a67-576d-4664-84e5-686da52638d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"CallType\": 9,\r\n\t\"SubType\": 2,\r\n    \"Category\": 4,\r\n\t\"RequestSource\": 1,\r\n\t\"RequestChannel\": 3,\r\n\t\"ApplicationNo\": \"VWX67890\",\r\n\t\"PolicyNo\": \"00107910\",\r\n\t\"proposerName\": \"Kavita Musale\",\r\n\t\"policyStatus\": \"IF\",\r\n\t\"plan\": \"FG Care Plus - Amex           \",\r\n\t\"DOB\": \"08/01/1981\",\r\n\t\"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CreatedByRef\": \"Venkat\",\r\n\t\"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"ModifiedByRef\": \"Test123\",\r\n\t\"AssignedToRole\": \"\",\r\n\t\"AssignedByUser\": 0,\r\n\t\"ReasonForChange\": \"\",\r\n\t\"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n\t\"TransactionData\": [\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"TotalSurrenderValue\",\r\n\t\t\t\"TagValue\": \"1000\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"CustomerRetained\",\r\n\t\t\t\"TagValue\": \"yes\" // yes or no if yes all below transection data optional\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ProductUIN\",\r\n\t\t\t\"TagValue\": \"1212\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderDate\",\r\n\t\t\t\"TagValue\": \"2023-12-04T05:18:04.546Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"SURRENDERPROCESS\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"UNITSTATEMENT\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"SurrenderFileType\",\r\n\t\t\t\"TagValue\": \"SURRENDERVALUE\"\r\n\t\t}\r\n\t],\r\n\t\"Uploads\": [\r\n\t\t{\r\n\t\t\t\"IndexName\": \"Claim Communications\",\r\n\t\t\t\"DocumentName\": \"\",\r\n\t\t\t\"fileData\": null\r\n\t\t}\r\n\t],\r\n\t\"CommunicationRequest\": [\r\n\t\t{\r\n\t\t\t\"SrvReqRefNo\": \"\",\r\n\t\t\t\"TemplateID\": \"\",\r\n\t\t\t\"CommType\": 2,\r\n\t\t\t\"ReceipientTo\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"ReceipientCC\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"MobileNos\": \"\",\r\n\t\t\t\"ScheduledTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"CommBody\": \"\",\r\n\t\t\t\"Attachments\": null\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Surrender Request FT YES",
+					"id": "416a0d0f-f2c5-47f4-8d39-1eec9966a650",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"CallType\": 9,\r\n\t\"SubType\": 1,\r\n    \"Category\": 2,\r\n\t\"RequestSource\": 1,\r\n\t\"RequestChannel\": 3,\r\n\t\"ApplicationNo\": \"VWX67890\",\r\n\t\"PolicyNo\": \"00107910\",\r\n     \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n\t\"proposerName\": \"Kavita Musale\",\r\n\t\"policyStatus\": \"IF\",\r\n\t\"plan\": \"FG Care Plus - Amex           \",\r\n\t\"DOB\": \"08/01/1981\",\r\n\t\"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CreatedByRef\": \"Venkat\",\r\n\t\"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"ModifiedByRef\": \"Test123\",\r\n\t\"AssignedToRole\": \"\",\r\n\t\"AssignedByUser\": 0,\r\n\t\"ReasonForChange\": \"\",\r\n\t\"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n\t\"TransactionData\": [\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"FundTransfer\",\r\n\t\t\t\"TagValue\": \"yes\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidatedBy\",\r\n\t\t\t\"TagValue\": \"form\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"RequestTime\",\r\n\t\t\t\"TagValue\": \"time\" \r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ReasonForSurrender\",\r\n\t\t\t\"TagValue\": \"1212\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"FundTransferTo\",\r\n\t\t\t\"TagValue\": \"12121\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"FundTransferAmount\",\r\n\t\t\t\"TagValue\": \"100\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"RelationsToFTPolicy\",\r\n\t\t\t\"TagValue\": \"brother\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"NameOfFundTransferPolicyOwner\",\r\n\t\t\t\"TagValue\": \"Krishna\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BalanceAmountForSurrender\",\r\n\t\t\t\"TagValue\": \"100\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BranchReceivedDate\",\r\n\t\t\t\"TagValue\": \"datetime\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidateSignature\",\r\n\t\t\t\"TagValue\": \"no\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"Comments\",\r\n\t\t\t\"TagValue\": \"updated\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ReasonList_Key\",\r\n\t\t\t\"TagValue\": \"[1,2,3]\"\r\n\t\t}\r\n\r\n\t],\r\n\t\"Uploads\": [\r\n\t\t{\r\n\t\t\t\"IndexName\": \"Claim Communications\",\r\n\t\t\t\"DocumentName\": \"pancard\",\r\n\t\t\t\"UserID\": \"1212\",\r\n\t\t\t\"UploadedBy\": \"Krishna\",\r\n\t\t\t\"UploadedOn\":  \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"DocumentSize\": 1234,\r\n\t\t\t\"FileLocation\": \"pathlocation\",\r\n\t\t\t\"BlobFileName\": \"VWX67890/aadhar\",\r\n\t\t\t\"FileExtnMime\": \"txt\"\r\n\t\t}\r\n\t],\r\n\t\"CommunicationRequest\": [\r\n\t\t{\r\n\t\t\t\"SrvReqRefNo\": \"\",\r\n\t\t\t\"TemplateID\": \"\",\r\n\t\t\t\"CommType\": 2,\r\n\t\t\t\"ReceipientTo\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"ReceipientCC\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"MobileNos\": \"\",\r\n\t\t\t\"ScheduledTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"CommBody\": \"\",\r\n\t\t\t\"Attachments\": null\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Surrender Request FT NO",
+					"id": "633d80aa-0546-460d-91c8-6ad82537ca67",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"CallType\": 9,\r\n\t\"SubType\": 1,\r\n    \"Category\": 2,\r\n\t\"RequestSource\": 1,\r\n\t\"RequestChannel\": 3,\r\n\t\"ApplicationNo\": \"VWX67890\",\r\n\t\"PolicyNo\": \"00107910\",\r\n\t\"proposerName\": \"Kavita Musale\",\r\n\t\"policyStatus\": \"IF\",\r\n\t\"plan\": \"FG Care Plus - Amex           \",\r\n\t\"DOB\": \"08/01/1981\",\r\n\t\"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CreatedByRef\": \"Venkat\",\r\n\t\"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"ModifiedByRef\": \"Test123\",\r\n\t\"AssignedToRole\": \"\",\r\n\t\"AssignedByUser\": 0,\r\n\t\"ReasonForChange\": \"\",\r\n\t\"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n\t\"TransactionData\": [\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"TotalSurrenderValue\",\r\n\t\t\t\"TagValue\": \"100000000\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"FundTransfer\",\r\n\t\t\t\"TagValue\": \"no\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidatedBy\",\r\n\t\t\t\"TagValue\": \"form\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"NameAsMentionedInTheBankAC\",\r\n\t\t\t\"TagValue\": \"krishna\" \r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ReasonForSurrender\",\r\n\t\t\t\"TagValue\": \"Emergency\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BankIFSC\",\r\n\t\t\t\"TagValue\": \"IDBIbANK\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BankAccountNumber\",\r\n\t\t\t\"TagValue\": \"852147963\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ConfirmBankAccountNumber\",\r\n\t\t\t\"TagValue\": \"123456789\"\r\n\t\t},\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BankName\",\r\n\t\t\t\"TagValue\": \"Krishna\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"InitiatePennyDrop\",\r\n\t\t\t\"TagValue\": \"100\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"BranchReceivedDate\",\r\n\t\t\t\"TagValue\": \"datetime\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidateSignature\",\r\n\t\t\t\"TagValue\": \"yes\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"Comments\",\r\n\t\t\t\"TagValue\": \"updated\"\r\n\t\t},\r\n         {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ReasonList_Key\",\r\n\t\t\t\"TagValue\": \"[1,2,3]\"\r\n\t\t}\r\n\t],\r\n\t\"Uploads\": [\r\n\t\t{\r\n\t\t\t\"IndexName\": \"Claim Communications\",\r\n\t\t\t\"DocumentName\": \"\",\r\n\t\t\t\"fileData\": null\r\n\t\t}\r\n\t],\r\n\t\"CommunicationRequest\": [\r\n\t\t{\r\n\t\t\t\"SrvReqRefNo\": \"\",\r\n\t\t\t\"TemplateID\": \"\",\r\n\t\t\t\"CommType\": 2,\r\n\t\t\t\"ReceipientTo\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"ReceipientCC\": \"fgtesting8@gmail.com\",\r\n\t\t\t\"MobileNos\": \"\",\r\n\t\t\t\"ScheduledTime\": \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"CommBody\": \"\",\r\n\t\t\t\"Attachments\": null\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Enquiry Existing",
+					"id": "fd518eca-ab34-45f1-bdf0-31aaaea6e061",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"EnquiryType\",\r\n            \"TagValue\": \"ExistingLoanDetails\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanDisbursed\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanInterest\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"OriginalLoanAmount\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"TotalLoanInterest\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"TotalLoanAmountRepaid\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanOutstanding\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LastLoanRepaidDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyAssignedTo\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyBondSubmitted\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Enquiry Eligible",
+					"id": "db47ab6c-bbb2-476e-9bf2-6073e1ccbf70",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"EnquiryType\",\r\n            \"TagValue\": \"EligibleLoanDetails\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanApplicable\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"SurrenderValue\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"MaxLoanvalue\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanValueDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanValueRequested\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NoOfTimesLoanTakenInThePolicy\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Enquiry Process",
+					"id": "58810c82-2ccf-4a8c-b719-b030266f9153",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"EnquiryType\",\r\n            \"TagValue\": \"ShareProcess\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanFileType\",\r\n            \"TagValue\": \"SENDLOANPROCESS\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanFileType\",\r\n            \"TagValue\": \"SENDFORMS\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanFileType\",\r\n            \"TagValue\": \"PROOFSORDOCUMENTSREQURIED\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanFileType\",\r\n            \"TagValue\": \"SENTLOANREPAYMENTLINK\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanFileType\",\r\n            \"TagValue\": \"LOANSTATEMENT\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Request",
+					"id": "d9d3cec5-f940-4046-9e90-fb59bc9e77c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 1,\r\n    \"Category\": 2,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"MaxLoanEligible\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanValueRequested\",\r\n            \"TagValue\": \"5000\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NoOfTimesLoanTakenInThePolicy\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PANNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"CustomerSigningDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BranchReceivedDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidatedBy\",\r\n\t\t\t\"TagValue\": \"form\"\r\n\t\t},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidateSignature\",\r\n            \"TagValue\": \"yes\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NameAsMentionedInTheBank\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankIFSC\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ConfirmBankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankName\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS FreeLook Request YES",
+					"id": "22b8c698-45cd-4d25-8f12-86d3f28c13c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 12,\r\n    \"SubType\": 1,\r\n    \"Category\": 2,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FundTransfer\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreelookApprovalEmail\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"RequestTime\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ReasonForFreelook\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreeLookAmount\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FundTransferAmount\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"RelationsToFTPolicy\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NameOfFundTransferPolicyOwner\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BalanceAmountForFreelook\",\r\n            \"TagValue\": \"\"\r\n        }\r\n{\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PANAadhaarLinked\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"CustomerSigningDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BranchReceivedDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidatedBy\",\r\n            \"TagValue\": \"form\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidateSignature\",\r\n            \"TagValue\": \"yes\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Comments\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS FreeLook Request NO",
+					"id": "41af85fe-e30e-480d-9afe-22cc98b1193d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 12,\r\n    \"SubType\": 1,\r\n    \"Category\": 2,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FundTransfer\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreelookApprovalEmail\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PANAadhaarLinked\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"CustomerSigningDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BranchReceivedDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidatedBy\",\r\n            \"TagValue\": \"form\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidateSignature\",\r\n            \"TagValue\": \"yes\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NameAsMentionedInTheBank\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankIFSC\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ConfirmBankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankName\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Comments\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreeLookAmount\",\r\n            \"TagValue\": \"5000\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS FreeLook Enquiry",
+					"id": "eafedd41-2182-4f1e-941a-4d792f73ba2f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 12,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreelookPeriodEndedOn\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreelookPeriod\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"DispatchDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PODNo\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ReceivedOn\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ReceivedBy\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"RTOStatus\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyRedispatch\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyRedispatch\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"DispatchMode\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"REDispatchDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"REPODNo\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"REReceivedOn\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"REReceivedBy\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"WelcomeCallDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"WelcomeCallComments\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"FreeLookFileType\",\r\n            \"TagValue\": \"SENDFREELOOKPROCESS\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS FreeLook Retained",
+					"id": "f1f303a0-65ed-4fea-8c8c-8d8a0e1c9f62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 12,\r\n    \"SubType\": 3,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"IsCustomerRetained\",\r\n            \"TagValue\": \"yes\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS POS Actions",
+					"id": "7c1b8231-8bc3-4b68-902a-021cc31d025e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TransectionId\": 1,\r\n    \"SrvReqRefNo\": \"SR202312211356152560\",\r\n    \"Status\": \"APPROVED\",\r\n    \"RequirementList\": [],\r\n    \"TransactionPayload\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/POSActionsOnServReq?code=Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"POSActionsOnServReq"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Vcjh2XbCAtMupBh-j4kTdgD_k9tQNbFuPKBavbNs8PqlAzFuCbyI8A=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBankDeatils",
+					"id": "751ea618-377b-4458-bfad-f61fca401358",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/GetBankDeatils?policyNo=00110568&clientId=456&SerReq=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"GetBankDeatils"
+							],
+							"query": [
+								{
+									"key": "policyNo",
+									"value": "00110568"
+								},
+								{
+									"key": "clientId",
+									"value": "456"
+								},
+								{
+									"key": "SerReq",
+									"value": ""
+								},
+								{
+									"key": "code",
+									"value": "Lu-g6-MBt6Mbkoplb23A8lUZNozPASMpLGJ90pTmeh4yAzFuODiu7g==",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Get Service Request By SID",
+					"id": "0a622b04-1b41-4f7a-ae12-5c99f0e37754",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetServiceRequestBySID?srId=SR202312120525168389&code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetServiceRequestBySID"
+							],
+							"query": [
+								{
+									"key": "srId",
+									"value": "SR202312120525168389"
+								},
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS POS Service List",
+					"id": "8e5e602b-852b-4b41-847c-6acbd8ed768c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetPOSListServiceRequests?role=4&userId=posuser3&code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetPOSListServiceRequests"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "4"
+								},
+								{
+									"key": "userId",
+									"value": "posuser3"
+								},
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS BOE Service List",
+					"id": "f77f7178-0f7c-491c-8097-81b3be837996",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetBOELatestServiceRequests?policyNo=00110814&code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetBOELatestServiceRequests"
+							],
+							"query": [
+								{
+									"key": "policyNo",
+									"value": "00110814"
+								},
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Get Raise Requirement",
+					"id": "4000709a-7630-4242-a3df-2889bca8c2e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetRaiseRequirements?calltype=3&subtype=1&code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetRaiseRequirements"
+							],
+							"query": [
+								{
+									"key": "calltype",
+									"value": "3"
+								},
+								{
+									"key": "subtype",
+									"value": "1"
+								},
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Get Master Table",
+					"id": "38f02f80-40ff-4248-9230-ef4f27cad622",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MasterRequest\": [\r\n        \"CALL_TYP\",\"SUB_TYP\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetMasterData?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetMasterData"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Get Master Transection Data",
+					"id": "11332d4a-e0f9-40db-bca5-091edf9927a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/GetMasterTransectionData?calltype=5&subtype=1&code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetMasterTransectionData"
+							],
+							"query": [
+								{
+									"key": "calltype",
+									"value": "5"
+								},
+								{
+									"key": "subtype",
+									"value": "1"
+								},
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS ServiceRequest Generic API",
+					"id": "5c9bc47c-5282-4d60-8bda-f7248d23cc11",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"\",\r\n    \"CallType\": 5, // Required\r\n    \"SubType\": 2, // Required\r\n    \"RequestSource\": 1, // Required\r\n    \"RequestChannel\": 2, // Required\r\n    \"Category\": 2,\r\n    \"ApplicationNo\": \"212121\",\r\n    \"DOB\": \"19830421\",\r\n    \"PolicyNo\": \"00110837\", // Required\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"policyStatus\": \"pending\",\r\n    \"proposerName\": \"john\",\r\n    \"plan\": \"Term\",\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"Test234\", // Required\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"POS\", //POS\r\n    \"AssignedByUser\": 1,\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidatedBy\",\r\n            \"TagValue\": \"Form\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidateSignature\",\r\n            \"TagValue\": \"no\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ReasonList_Key\",\r\n            \"TagValue\": \"[1,2,3]\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Email_Old\",\r\n            \"TagValue\": \"oldemail@gmail.com\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Email_New\",\r\n            \"TagValue\": \"test1@gmail.com\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"custRole\",\r\n            \"TagValue\": \"2\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Client_Id\",\r\n            \"TagValue\": \"50144187\"\r\n        }\r\n    ],\r\n    \"Uploads\": [\r\n        {\r\n\t\t\t\"IndexName\": \"Claim Communications\",\r\n\t\t\t\"DocumentName\": \"aadhar\",\r\n\t\t\t\"UserID\": \"1234\",\r\n\t\t\t\"UploadedBy\": \"Krishna\",\r\n\t\t\t\"UploadedOn\":  \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"DocumentSize\": 1234,\r\n\t\t\t\"FileLocation\": \"pathlocation\",\r\n\t\t\t\"BlobFileName\": \"VWX67890/aadhar\",\r\n\t\t\t\"FileExtnMime\": \"txt\"\r\n\t\t},\r\n        {\r\n\t\t\t\"IndexName\": \"Claim Communications\",\r\n\t\t\t\"DocumentName\": \"aadhar\",\r\n\t\t\t\"UserID\": \"1234\",\r\n\t\t\t\"UploadedBy\": \"Krishna\",\r\n\t\t\t\"UploadedOn\":  \"2023-12-05T05:18:17.919Z\",\r\n\t\t\t\"DocumentSize\": 1234,\r\n\t\t\t\"FileLocation\": \"pathlocation\",\r\n\t\t\t\"BlobFileName\": \"VWX67890/aadhar\",\r\n\t\t\t\"FileExtnMime\": \"txt\"\r\n\t\t}\r\n    ],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS LA API",
+					"id": "c3febd2a-e81e-4163-9e7b-7f3ab68dda3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fgliclifeasiaapis.azurewebsites.net/api/CallLifeAsia?code=M7HnV7OsY0xVWaN-UYcphJWreLQ_-cB4lajY_6fQprpNAzFu6NGhpA==&reqtype=PayeeCodeApproval&srid=SR20231220105108133",
+							"protocol": "https",
+							"host": [
+								"fgliclifeasiaapis",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CallLifeAsia"
+							],
+							"query": [
+								{
+									"key": "clientNo",
+									"value": "50144187",
+									"disabled": true
+								},
+								{
+									"key": "mobileNo",
+									"value": "1212121212",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "M7HnV7OsY0xVWaN-UYcphJWreLQ_-cB4lajY_6fQprpNAzFu6NGhpA=="
+								},
+								{
+									"key": "reqtype",
+									"value": "PayeeCodeApproval"
+								},
+								{
+									"key": "srid",
+									"value": "SR20231220105108133"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS CommConfig",
+					"id": "f950f162-49f7-47fe-a166-b4e08f58026d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"\",\r\n        \"CommType\": 2,\r\n        \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fgliccommconfigapi.azurewebsites.net/api/GenerateTemplate?srid=SR202312200748127604&status=SENDFREELOOKPROCESS&code=8bQj2mp2v3hmZPZip1HkRjoP3AtA31U-fSoQPYO1uLDkAzFunjC4tA==",
+							"protocol": "https",
+							"host": [
+								"fgliccommconfigapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GenerateTemplate"
+							],
+							"query": [
+								{
+									"key": "srid",
+									"value": "SR202312200748127604"
+								},
+								{
+									"key": "status",
+									"value": "SENDFREELOOKPROCESS"
+								},
+								{
+									"key": "code",
+									"value": "8bQj2mp2v3hmZPZip1HkRjoP3AtA31U-fSoQPYO1uLDkAzFunjC4tA=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Logic Workflow",
+					"id": "6db79003-f9ae-462f-80b8-e6d8096ceeff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"SrvReqRefNo\": \"SR202311210933464927\",\r\n        \"TemplateID\": \"9\",\r\n        \"CommType\": 2,\r\n        \"ReceipientTo\": \"venkatakrishna.b@nichebit.com\",\r\n        \"ReceipientCC\": \"\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-11-21T09:33:45.926Z\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    },\r\n    {\r\n        \"SrvReqRefNo\": \"SR202311210933464927\",\r\n        \"TemplateID\": \"9\",\r\n        \"CommType\": 1,\r\n        \"ReceipientTo\": \"\",\r\n        \"ReceipientCC\": \"\",\r\n        \"MobileNos\": \"9866645674\",\r\n        \"ScheduledTime\": \"2023-11-21T09:33:45.926Z\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fissservicerequest.azurewebsites.net:443/api/Contact_Details_Update/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=qnLRkZ9IKtzTEG2s2S2UByvXwzwW0qm6hd2IrogQUNc",
+							"protocol": "https",
+							"host": [
+								"fissservicerequest",
+								"azurewebsites",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"api",
+								"Contact_Details_Update",
+								"triggers",
+								"When_a_HTTP_request_is_received",
+								"invoke"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-05-01"
+								},
+								{
+									"key": "sp",
+									"value": "%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun"
+								},
+								{
+									"key": "sv",
+									"value": "1.0"
+								},
+								{
+									"key": "sig",
+									"value": "qnLRkZ9IKtzTEG2s2S2UByvXwzwW0qm6hd2IrogQUNc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Logic Workflow Surrender Query",
+					"id": "0db4acb8-d372-40f9-ae24-2ba314aacded",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"srvReqID\": 236,\r\n    \"srvReqRefNo\": \"SR20231206080918869\",\r\n    \"category\": 1,\r\n    \"callType\": 9,\r\n    \"subType\": 3,\r\n    \"reqSource\": 1,\r\n    \"reqMode\": 3,\r\n    \"policyRef\": 63,\r\n    \"customerRef\": 3,\r\n    \"custRole\": 0,\r\n    \"branchRef\": 0,\r\n    \"currentStatus\": \"CLOSED\",\r\n    \"createdOn\": \"2023-12-06T13:39:22.5534371+05:30\",\r\n    \"createdByRef\": \"Venkat\",\r\n    \"modifiedOn\": \"2023-12-06T13:39:22.5535536+05:30\",\r\n    \"modifiedByRef\": \"Test123\",\r\n    \"source\": null,\r\n    \"prtSerReqID\": null,\r\n    \"transactionPayload\": null,\r\n    \"deDupPayload\": null,\r\n    \"assignedToRole\": null,\r\n    \"assignedToUser\": null,\r\n    \"reasonForChange\": \"\",\r\n    \"requestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"reasonDelayed\": null,\r\n    \"custSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"policyStatus\": \"IF\",\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"planName\": \"FG Care Plus - Amex           \",\r\n    \"communicationPayload\": \"[{\\\"SrvReqRefNo\\\":\\\"\\\",\\\"TemplateID\\\":\\\"\\\",\\\"CommType\\\":2,\\\"ReceipientTo\\\":\\\"fgtesting8@gmail.com\\\",\\\"ReceipientCC\\\":\\\"fgtesting8@gmail.com\\\",\\\"MobileNos\\\":\\\"\\\",\\\"ScheduledTime\\\":\\\"2023-12-05T05:18:17.919Z\\\",\\\"CommBody\\\":\\\"\\\",\\\"Attachments\\\":null},{\\\"SrvReqRefNo\\\":\\\"\\\",\\\"TemplateID\\\":\\\"\\\",\\\"CommType\\\":1,\\\"ReceipientTo\\\":\\\"\\\",\\\"ReceipientCC\\\":\\\"\\\",\\\"MobileNos\\\":\\\"9892686867\\\",\\\"ScheduledTime\\\":\\\"2023-12-05T05:18:17.919Z\\\",\\\"CommBody\\\":\\\"\\\",\\\"Attachments\\\":null}]\",\r\n    \"dob\": \"08/01/1981\",\r\n    \"serviceRequestTransectionData\": [\r\n        {\r\n            \"servRequestDtlId\": 1628,\r\n            \"srvReqID\": 236,\r\n            \"tagName\": \"TotalSurrenderValue\",\r\n            \"tagValue\": \"1000\",\r\n            \"status\": \"Create\"\r\n        },\r\n        {\r\n            \"servRequestDtlId\": 1629,\r\n            \"srvReqID\": 236,\r\n            \"tagName\": \"SurrenderFileType\",\r\n            \"tagValue\": \"Process\",\r\n            \"status\": \"Create\"\r\n        },\r\n        {\r\n            \"servRequestDtlId\": 1630,\r\n            \"srvReqID\": 236,\r\n            \"tagName\": \"SurrenderFileType\",\r\n            \"tagValue\": \"FundStatement\",\r\n            \"status\": \"Create\"\r\n        },\r\n        {\r\n            \"servRequestDtlId\": 1631,\r\n            \"srvReqID\": 236,\r\n            \"tagName\": \"SurrenderFileType\",\r\n            \"tagValue\": \"ValueLetter\",\r\n            \"status\": \"Create\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fissservicerequest.azurewebsites.net:443/api/Surrender/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=s1xCEMSLQcNuqBkegaPLRJCuWXAkXj4nshjGd6FEpEI",
+							"protocol": "https",
+							"host": [
+								"fissservicerequest",
+								"azurewebsites",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"api",
+								"Surrender",
+								"triggers",
+								"When_a_HTTP_request_is_received",
+								"invoke"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-05-01"
+								},
+								{
+									"key": "sp",
+									"value": "%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun"
+								},
+								{
+									"key": "sv",
+									"value": "1.0"
+								},
+								{
+									"key": "sig",
+									"value": "s1xCEMSLQcNuqBkegaPLRJCuWXAkXj4nshjGd6FEpEI"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Logic Workflow Mobile",
+					"id": "d8878491-6d20-427e-bc3c-70b3d6a7f34a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"SrvReqRefNo\": \"SR202311210933464927\",\r\n        \"TemplateID\": \"9\",\r\n        \"CommType\": 2,\r\n        \"ReceipientTo\": \"venkatakrishna.b@nichebit.com\",\r\n        \"ReceipientCC\": \"\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-11-21T09:33:45.926Z\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    },\r\n    {\r\n        \"SrvReqRefNo\": \"SR202311210933464927\",\r\n        \"TemplateID\": \"9\",\r\n        \"CommType\": 1,\r\n        \"ReceipientTo\": \"\",\r\n        \"ReceipientCC\": \"\",\r\n        \"MobileNos\": \"9866645674\",\r\n        \"ScheduledTime\": \"2023-11-21T09:33:45.926Z\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fissservicerequest.azurewebsites.net:443/api/Contact_Details_Update/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=qnLRkZ9IKtzTEG2s2S2UByvXwzwW0qm6hd2IrogQUNc",
+							"protocol": "https",
+							"host": [
+								"fissservicerequest",
+								"azurewebsites",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"api",
+								"Contact_Details_Update",
+								"triggers",
+								"When_a_HTTP_request_is_received",
+								"invoke"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-05-01"
+								},
+								{
+									"key": "sp",
+									"value": "%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun"
+								},
+								{
+									"key": "sv",
+									"value": "1.0"
+								},
+								{
+									"key": "sig",
+									"value": "qnLRkZ9IKtzTEG2s2S2UByvXwzwW0qm6hd2IrogQUNc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Assign To User",
+					"id": "c54d6b51-f81f-46fc-a117-ce4826bae2bf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fgliccommonserviceapi.azurewebsites.net/api/AssignToSelectedUser?code=bHS26BLdLj8dI13xldGg4eZcb48JjbRkK_A8e_lpkvvmAzFudhgTuw==&srid=SR20231219151214628&reqtype=Check_Role",
+							"protocol": "https",
+							"host": [
+								"fgliccommonserviceapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"AssignToSelectedUser"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "bHS26BLdLj8dI13xldGg4eZcb48JjbRkK_A8e_lpkvvmAzFudhgTuw=="
+								},
+								{
+									"key": "srid",
+									"value": "SR20231219151214628"
+								},
+								{
+									"key": "reqtype",
+									"value": "Check_Role"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Change Status",
+					"id": "0053234b-7304-4e71-a722-ff1a33087d72",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fgliccommonserviceapi.azurewebsites.net/api/ChangeStatusForSelectedServiceRequest?srid=SR202311271306146113&status=CLOSED&code=3-72z7usqESoQrBDHTVYfY-Dm6n2w5JsnrErNfx1yQJlAzFudAPFvw==",
+							"protocol": "https",
+							"host": [
+								"fgliccommonserviceapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"ChangeStatusForSelectedServiceRequest"
+							],
+							"query": [
+								{
+									"key": "srid",
+									"value": "SR202311271306146113"
+								},
+								{
+									"key": "status",
+									"value": "CLOSED"
+								},
+								{
+									"key": "code",
+									"value": "3-72z7usqESoQrBDHTVYfY-Dm6n2w5JsnrErNfx1yQJlAzFudAPFvw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Details Update",
+					"id": "049267ea-b983-4246-94f6-1638beeaeec5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"\",\r\n    \"CallType\": 5, // Required\r\n    \"SubType\": 1, // Required\r\n    \"RequestSource\": 1, // Required\r\n    \"RequestChannel\": 2, // Required\r\n    \"Category\": 2,\r\n    \"ApplicationNo\": \"212121\",\r\n    \"DOB\": \"\",\r\n    \"PolicyNo\": \"0012312\", // Required\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"policyStatus\": \"pending\",\r\n    \"proposerName\": \"john\",\r\n    \"plan\": \"Term\",\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"Test234\", // Required\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"POS\", //POS\r\n    \"AssignedByUser\": 1,\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankName_New\",\r\n            \"TagValue\": \"vishnu\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Isfc_New\",\r\n            \"TagValue\": \"I000002345\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccHoldName_New\",\r\n            \"TagValue\": \"35435\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccType_New\",\r\n            \"TagValue\": 1\r\n        },\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccNumber_New\",\r\n            \"TagValue\": \"85698456895326\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"RegistredOn_Old\",\r\n            \"TagValue\": \"2023-12-04 11:57:41.257\"\r\n        },\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankName_Old\",\r\n            \"TagValue\": \"SBI\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Isfc_Old\",\r\n            \"TagValue\": \"SBIN0021206\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccHoldName_Old\",\r\n            \"TagValue\": \"vishnu\"\r\n        },\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccNumber_Old\",\r\n            \"TagValue\": \"85698\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"AccType_Old\",\r\n            \"TagValue\": 1\r\n        }\r\n    ],\r\n    \"Uploads\": [\r\n        {\r\n            \"IndexName\": \"Claim Communications\",\r\n            \"DocumentName\": \"test\",\r\n            \"fileData\": null\r\n        }\r\n    ],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://servicerequesttestapi.azurewebsites.net/api/CreateServiceRequest?code=nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg==",
+							"protocol": "https",
+							"host": [
+								"servicerequesttestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListOfServiceRequest",
+					"id": "f87b94ec-1800-41b7-a918-758931451c99",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://servicerequesttestapi.azurewebsites.net/api/GetListServiceRequests?role=POS&userId=1&code=nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg==",
+							"protocol": "https",
+							"host": [
+								"servicerequesttestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetListServiceRequests"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "POS"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								},
+								{
+									"key": "code",
+									"value": "nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Raise Requirements",
+					"id": "d2dae7bb-c25d-4ba4-a2ed-a242053109fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://servicerequesttestapi.azurewebsites.net/api/GetRaiseRequirements?calltype=5&subtype=1&code=nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg==",
+							"protocol": "https",
+							"host": [
+								"servicerequesttestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetRaiseRequirements"
+							],
+							"query": [
+								{
+									"key": "calltype",
+									"value": "5"
+								},
+								{
+									"key": "subtype",
+									"value": "1"
+								},
+								{
+									"key": "code",
+									"value": "nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Master Table",
+					"id": "d9921d5e-7710-49cd-9717-ac2bf8d2ae7a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MasterRequest\": [\r\n        \"CALL_TYP\",\"SUB_TYP\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://servicerequestfg.azurewebsites.net/api/GetMasterData?code=8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg==",
+							"protocol": "https",
+							"host": [
+								"servicerequestfg",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetMasterData"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Latest Service Requests",
+					"id": "c97fdf43-e8cc-4e21-93de-94c7787414cf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "code",
+								"value": "8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg==",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://servicerequestfg.azurewebsites.net/api/GetLatestServiceRequests?code=8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg==&policyNo=00110825",
+							"protocol": "https",
+							"host": [
+								"servicerequestfg",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetLatestServiceRequests"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg=="
+								},
+								{
+									"key": "policyNo",
+									"value": "00110825"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Service Request",
+					"id": "d7993571-5fc3-4dd8-bd56-60c1b9ce2426",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"\",\r\n    \"CallType\": 1,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestMode\": 2,\r\n    \"ApplicationNo\":\"\",\r\n    \"DOB\":\"\",\r\n    \"PolicyNo\": \"00110825\",\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": \"\",\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"User123\",\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"User456\",\r\n    \"AssignedTo\": \"POS\",\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"CommunicationRequest\": [{\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"1\",\r\n        \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n        \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"9652860405\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://servicerequestfg.azurewebsites.net/api/CreateServiceRequest?code=8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg==",
+							"protocol": "https",
+							"host": [
+								"servicerequestfg",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "8mwgijI-vaJqSNBvMklnE8wiYiHueCdXah1vqDckALp9AzFucT2MBg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CommunicationService",
+					"id": "af87116c-c2ce-4037-bbb8-7b48edaf4376",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"srvReqRefNo\": \"SR202312191410102384\",\r\n        \"templateID\": \"18\",\r\n        \"commType\": 2,\r\n        \"receipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n        \"receipientCC\": \"RecipientCCValue2\",\r\n        \"mobileNos\": \"\",\r\n        \"scheduledTime\": \"2023-10-31T10:30:00\",\r\n        \"commBody\": \"\\\"CUSTOMERNAME\\\":\\\"Kavita Musale\\\",\\\"Process Name\\\":\\\"Amount Enquiry\\\",\\\"PROCESSLINK\\\":\\\"https://fissab8a.blob.core.windows.net/loan/Future%20Generali%20Care_133N002V01.pdf\\\",\\\"DOCLINK\\\":\\\"https://fissab8a.blob.core.windows.net/loan/Future%20Generali%20Care_133N002V01.pdf\\\"\",\r\n        \"attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://communicationservice.azurewebsites.net/api/communicationService?code=iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ==",
+							"protocol": "https",
+							"host": [
+								"communicationservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"communicationService"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service Request",
+					"id": "cf421630-7cbd-46cc-b7e7-4bbe8df1182e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://servicerequesttestapi.azurewebsites.net/api/GetServiceRequests?srId=SR202311291346337295&code=nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg==",
+							"protocol": "https",
+							"host": [
+								"servicerequesttestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetServiceRequests"
+							],
+							"query": [
+								{
+									"key": "srId",
+									"value": "SR202311291346337295"
+								},
+								{
+									"key": "code",
+									"value": "nzxd5NDpQ-vIPF-dXYQhwvNrFhKqc79_-78C8VY7gpduAzFu945Ppg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPPC",
+					"id": "738103f5-52eb-4a3a-b121-e8befddd4207",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Ocp-Apim-Subscription-Key",
+								"value": "dc2821ba8f7a42e291c8e473aedafadb",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RequestHeader\": {\r\n        \"source\": null,\r\n        \"carrierCode\": \"2\",\r\n        \"branch\": \"PRA\",\r\n        \"userId\": \"website\",\r\n        \"userRole\": \"10\",\r\n        \"monthEndExtension\": \"N\",\r\n        \"meDate\": \"30/09/2023\"\r\n    },\r\n    \"RequestBody\": {\r\n        \"policyNo\": \"00013375\",\r\n        \"year\": \"2022\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/PPC/GetPPC"
+					},
+					"response": []
+				},
+				{
+					"name": "FISSAzureOTPService",
+					"id": "1f745343-24c8-4076-be25-4898e4a2f965",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://commonservice.azurewebsites.net/api/OTPService?code=y3BxlW2EwU_02Pve3tEdXudjcU9vZQ5DGfLz9w72OvZZAzFuq264Gg==",
+							"protocol": "https",
+							"host": [
+								"commonservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"OTPService"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "y3BxlW2EwU_02Pve3tEdXudjcU9vZQ5DGfLz9w72OvZZAzFuq264Gg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PPC",
+					"id": "a23d062d-283f-4732-ad8c-aaa510398037",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"0\",\r\n    \"CallType\": 2,\r\n    \"SubType\": 2,\r\n    \"RequestSource\": 1,\r\n    \"RequestMode\": 2,\r\n    \"ApplicationNo\":\"\",\r\n    \"DOB\":\"\",\r\n    \"PolicyNo\": 1,\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"User123\",\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"User456\",\r\n    \"AssignedTo\": \"Trump\",\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"Year\":\"2022\",\r\n    \"CustomerName\":\"Vishnu\",\r\n    \"CommunicationRequest\":[ {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"7\",\r\n        \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n        \"ReceipientTo\": \"vkatheram@gmail.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    },\r\n    {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"5\",\r\n        \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n        \"ReceipientTo\": \"vkatheram@gmail.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"8247233559\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://premiumpaidcretificateservice.azurewebsites.net/api/PremiumPaidCertificate?code=y9VBbTtGOVEvLPJzO82DDtCCxvOJSO1fBDuoEL9u50-TAzFuXu78Mw==",
+							"protocol": "https",
+							"host": [
+								"premiumpaidcretificateservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"PremiumPaidCertificate"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "y9VBbTtGOVEvLPJzO82DDtCCxvOJSO1fBDuoEL9u50-TAzFuXu78Mw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "navin_ppc",
+					"id": "0c52e1d0-34bb-445b-a8d8-e6bce2cf3398",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"0\",\r\n    \"CallType\": 2,\r\n    \"SubType\": 2,\r\n    \"RequestSource\": 1,\r\n    \"RequestMode\": 2,\r\n    \"ApplicationNo\":\"\",\r\n    \"DOB\":\"\",\r\n    \"PolicyNo\": 1,\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"User123\",\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"User456\",\r\n    \"AssignedTo\": \"Trump\",\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"Year\":\"2022\",\r\n    \"CustomerName\":\"Vishnu\",\r\n    \"CommunicationRequest\":[ {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"7\",\r\n        \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n        \"ReceipientTo\": \"vkatheram@gmail.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    },\r\n    {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"5\",\r\n        \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n        \"ReceipientTo\": \"vkatheram@gmail.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"8247233559\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://premiumpaidcretificateservice.azurewebsites.net/api/PremiumPaidCertificate?code=y9VBbTtGOVEvLPJzO82DDtCCxvOJSO1fBDuoEL9u50-TAzFuXu78Mw==",
+							"protocol": "https",
+							"host": [
+								"premiumpaidcretificateservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"PremiumPaidCertificate"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "y9VBbTtGOVEvLPJzO82DDtCCxvOJSO1fBDuoEL9u50-TAzFuXu78Mw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Address_Changes for BOE",
+					"id": "62fc6817-245f-4ba2-ad61-a26f0d39c26c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"\",\r\n    \"CallType\": 5, // Required\r\n    \"SubType\": 5, // Required\r\n    \"RequestSource\": 1, // Required\r\n    \"RequestChannel\": 2, // Required\r\n    \"Category\": 2,  \r\n    \"ApplicationNo\": \"212121\",\r\n    \"DOB\": \"19830421\",\r\n    \"PolicyNo\": \"00110837\", // Required\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"policyStatus\": \"pending\",\r\n    \"proposerName\": \"john\",\r\n    \"plan\": \"Term\",\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"Test234\", // Required\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"POS\", //POS\r\n    \"AssignedByUser\": 1,\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"TransactionData\": [\r\n       \r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Current_Address\",\r\n            \"TagValue\": \"oldemail@gmail.com\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_Line1\",\r\n            \"TagValue\": \"Manjeera Mall\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_Line2\",\r\n            \"TagValue\": \"Kukatpally\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_LandMark\",\r\n            \"TagValue\": \"Near Demart\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_Pincode\",\r\n            \"TagValue\": \"500032\"\r\n        },\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_City\",\r\n            \"TagValue\": \"Hyderabad\"\r\n        },\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"New_State\",\r\n            \"TagValue\": \"Telanagana\"\r\n        },\r\n          {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"custRole\",\r\n            \"TagValue\": \"2\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Client_Id\",\r\n            \"TagValue\": \"50144187\"\r\n        },\r\n        {\r\n            \"Status\":\"Create\",\r\n            \"TagName\":\"Add_Land_Mark\",\r\n            \"TagValue\":\"\"\r\n        }\r\n        \r\n     \r\n\r\n   \r\n    ],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS GetSerReqStatus",
+					"id": "9d36c10a-7a0e-4747-87e7-c36ae7312e1f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fgliccommonserviceapi.azurewebsites.net/api/GetSerReqStatus?code=esFJpb0SNgnYxtHipi8gq4TSVC2YZToGgpX_CRwRk5u7AzFu28e3NQ==",
+							"protocol": "https",
+							"host": [
+								"fgliccommonserviceapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GetSerReqStatus"
+							],
+							"query": [
+								{
+									"key": "srid",
+									"value": "SR202311271306146113",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "esFJpb0SNgnYxtHipi8gq4TSVC2YZToGgpX_CRwRk5u7AzFu28e3NQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Bank Details",
+					"id": "3932d98d-d12e-4ac6-9d95-b3ade253f269",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SrvReqID\": 0,\r\n    \"SrvReqRefNo\": \"\",\r\n    \"CallType\": 3, // Required\r\n    \"SubType\": 1, // Required\r\n    \"RequestSource\": 1, // Required\r\n    \"RequestChannel\": 2, // Required\r\n    \"Category\": 2,\r\n    \"ApplicationNo\": \"212121\",\r\n    \"DOB\": \"06/12/2023\",\r\n    \"PolicyNo\": \"00110568\", // Required\r\n    \"CustomerId\": 456,\r\n    \"CustRole\": 2,\r\n    \"policyStatus\": \"pending\",\r\n    \"proposerName\": \"john\",\r\n    \"plan\": \"Term\",\r\n    \"BranchId\": 7890,\r\n    \"CurrentStatus\": 3,\r\n    \"CreatedOn\": \"2023-10-26T10:15:00\",\r\n    \"CreatedByRef\": \"Test234\", // Required\r\n    \"ModifiedOn\": \"2023-10-26T10:30:00\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"POS\", //POS\r\n    \"AssignedByUser\": 1,\r\n    \"ReasonForChange\": \"Updated for customer request\",\r\n    \"RequestDateTime\": \"2023-10-26T10:45:00\",\r\n    \"ReasonDelayed\": \"Awaiting customer response\",\r\n    \"CustSignDateTime\": \"2023-10-26T11:00:00\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Bank_Name_New\",\r\n            \"TagValue\": \"vishnu\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Bank_IFSC_New\",\r\n            \"TagValue\": \"I0000045\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_HldrName_New\",\r\n            \"TagValue\": \"35435\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_Type_New\",\r\n            \"TagValue\": 1\r\n},\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_Number_New\",\r\n            \"TagValue\": \"45869252\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"RegistredOn_Old\",\r\n            \"TagValue\": \"2023-12-04 11:57:41.257\"\r\n},\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Bank_Name_Old\",\r\n            \"TagValue\": \"SBI\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Bank_IFSC_Old\",\r\n            \"TagValue\": \"SBIN0021206\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_HldrName_Old\",\r\n            \"TagValue\": \"vishnu\"\r\n},\r\n         {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_Number_Old\",\r\n            \"TagValue\": \"856984454453\"\r\n},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"Acc_Type_Old\",\r\n            \"TagValue\": 1\r\n}\r\n    ],\r\n    \"Uploads\": [\r\n        {\r\n            \"IndexName\": \"Claim Communications\",\r\n            \"DocumentName\": \"test\",\r\n            \"fileData\": null\r\n        }\r\n    ],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fglicservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw==",
+							"protocol": "https",
+							"host": [
+								"fglicservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VA3y4BnFtElj5Anf-D-qbhuAedNFAhcF3hqSk2FAMWyKAzFu44XJHw=="
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "63596ce6-68ec-4012-9360-da1230334d13"
+		},
+		{
+			"name": "FG UAT",
+			"item": [
+				{
+					"name": "CommunicationService",
+					"id": "fb537ff7-40f0-442e-acf4-6b9c66cf323e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"srvReqRefNo\": \"SR202312210623426348\",\r\n        \"templateID\": \"7\",\r\n        \"commType\": 2,\r\n        \"receipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n        \"receipientCC\": \"RecipientCCValue2\",\r\n        \"mobileNos\": \"\",\r\n        \"scheduledTime\": \"2023-10-31T10:30:00\",\r\n        \"commBody\": \"\\\"srntype\\\":\\\"Loan Request\\\",\\\"srnno\\\":\\\"SR202312210623426348\\\",\\\"srntat\\\":\\\"4 days\\\",\\\"srndate\\\":\\\"Thursday, 21 December 2023\\\"\",\r\n        \"attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatcommunicationservice.azurewebsites.net/api/CommunicationService?code=Qig1G3zL4Ix-BcAYRPlLbKbSpgGoCTQijgWzPgnYo7bZAzFu-zUY5g==",
+							"protocol": "https",
+							"host": [
+								"uatcommunicationservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CommunicationService"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "Qig1G3zL4Ix-BcAYRPlLbKbSpgGoCTQijgWzPgnYo7bZAzFu-zUY5g=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS CommConfig",
+					"id": "7495e366-aba1-41ed-a430-295ed01adc2f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"SrvReqRefNo\": \"\",\r\n        \"TemplateID\": \"\",\r\n        \"CommType\": 2,\r\n        \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n        \"ReceipientCC\": \"RecipientCCValue2\",\r\n        \"MobileNos\": \"\",\r\n        \"ScheduledTime\": \"2023-10-31T10:30:00\",\r\n        \"CommBody\": \"\",\r\n        \"Attachments\": null\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatcommunicationconfig.azurewebsites.net/api/GenerateTemplate?srid=SR202312211107284932&status=SURRENDERPROCESS&code=-gHiMBOJjglTyEB7u6jcJOw2IosICyEtegAi627dt45jAzFuba47cQ==",
+							"protocol": "https",
+							"host": [
+								"uatcommunicationconfig",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"GenerateTemplate"
+							],
+							"query": [
+								{
+									"key": "srid",
+									"value": "SR202312211107284932"
+								},
+								{
+									"key": "status",
+									"value": "SURRENDERPROCESS"
+								},
+								{
+									"key": "code",
+									"value": "-gHiMBOJjglTyEB7u6jcJOw2IosICyEtegAi627dt45jAzFuba47cQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Request",
+					"id": "b5354364-f1f3-4622-8a70-71929c36e6e9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"MaxLoanEligible\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanValueRequested\",\r\n            \"TagValue\": \"5000\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NoOfTimesLoanTakenInThePolicy\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PANNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"CustomerSigningDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BranchReceivedDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n\t\t\t\"Status\": \"Create\",\r\n\t\t\t\"TagName\": \"ValidatedBy\",\r\n\t\t\t\"TagValue\": \"form\"\r\n\t\t},\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ValidateSignature\",\r\n            \"TagValue\": \"yes\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"NameAsMentionedInTheBank\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankIFSC\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"ConfirmBankAccountNumber\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"BankName\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ==",
+							"protocol": "https",
+							"host": [
+								"uatservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS LA API",
+					"id": "2e319cf1-7c7a-465e-a3f5-97b5fa7e1c90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://uatlisfeasiaapi.azurewebsites.net/api/CallLifeAsia?reqtype=FreeLookApproval&srid=SR202312210623426348&code=ibbGbjJWTP-VopNDnu6Lp6S5XHcd1SwXozG7MzDsEnviAzFuM1iJIQ==",
+							"protocol": "https",
+							"host": [
+								"uatlisfeasiaapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CallLifeAsia"
+							],
+							"query": [
+								{
+									"key": "clientNo",
+									"value": "50144187",
+									"disabled": true
+								},
+								{
+									"key": "mobileNo",
+									"value": "1212121212",
+									"disabled": true
+								},
+								{
+									"key": "reqtype",
+									"value": "FreeLookApproval"
+								},
+								{
+									"key": "srid",
+									"value": "SR202312210623426348"
+								},
+								{
+									"key": "code",
+									"value": "ibbGbjJWTP-VopNDnu6Lp6S5XHcd1SwXozG7MzDsEnviAzFuM1iJIQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Assign To User",
+					"id": "be96bb2d-db24-42b6-b367-3c06cbab5d49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://uatcommonservice.azurewebsites.net/api/AssignToSelectedUser?srid=SR202312210623426348&reqtype=Check_Role&code=rWGk1AwzJhud2Dphun6INrsTyQApmLaQc0VGd7y3_nD0AzFuxz0ABg==",
+							"protocol": "https",
+							"host": [
+								"uatcommonservice",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"AssignToSelectedUser"
+							],
+							"query": [
+								{
+									"key": "srid",
+									"value": "SR202312210623426348"
+								},
+								{
+									"key": "reqtype",
+									"value": "Check_Role"
+								},
+								{
+									"key": "code",
+									"value": "rWGk1AwzJhud2Dphun6INrsTyQApmLaQc0VGd7y3_nD0AzFuxz0ABg=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS Loan Enquiry Existing",
+					"id": "a8acf1b8-b22b-47b4-85d2-17af1546718d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CallType\": 11,\r\n    \"SubType\": 2,\r\n    \"Category\": 1,\r\n    \"RequestSource\": 1,\r\n    \"RequestChannel\": 3,\r\n    \"ApplicationNo\": \"VWX67890\",\r\n    \"PolicyNo\": \"00107910\",\r\n    \"CustomerId\": \"12234\",\r\n    \"CustRole\": 2,\r\n    \"proposerName\": \"Kavita Musale\",\r\n    \"policyStatus\": \"IF\",\r\n    \"plan\": \"FG Care Plus - Amex           \",\r\n    \"DOB\": \"08/01/1981\",\r\n    \"CreatedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CreatedByRef\": \"Venkat\",\r\n    \"ModifiedOn\": \"2023-12-05T05:18:17.919Z\",\r\n    \"ModifiedByRef\": \"Test123\",\r\n    \"AssignedToRole\": \"\",\r\n    \"AssignedByUser\": 0,\r\n    \"ReasonForChange\": \"\",\r\n    \"RequestDateTime\": \"2023-12-05T05:18:17.919Z\",\r\n    \"CustSignDateTime\": \"2023-12-04T05:18:04.546Z\",\r\n    \"TransactionData\": [\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"EnquiryType\",\r\n            \"TagValue\": \"ExistingLoanDetails\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanDisbursed\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanInterest\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"OriginalLoanAmount\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"TotalLoanInterest\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"TotalLoanAmountRepaid\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LoanOutstanding\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"LastLoanRepaidDate\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyAssignedTo\",\r\n            \"TagValue\": \"\"\r\n        },\r\n        {\r\n            \"Status\": \"Create\",\r\n            \"TagName\": \"PolicyBondSubmitted\",\r\n            \"TagValue\": \"\"\r\n        }\r\n    ],\r\n    \"Uploads\": [],\r\n    \"CommunicationRequest\": [\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 2, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        },\r\n        {\r\n            \"SrvReqRefNo\": \"\",\r\n            \"TemplateID\": \"\",\r\n            \"CommType\": 1, // Use the integer value corresponding to the CommType enum (1 for SMS, 2 for EMAIL, 3 for WHATSAPP)\r\n            \"ReceipientTo\": \"Venkatakrishna.b@nichebit.com\",\r\n            \"ReceipientCC\": \"RecipientCCValue2\",\r\n            \"MobileNos\": \"8143814905\",\r\n            \"ScheduledTime\": \"2023-10-31T10:30:00\", // Use a valid date-time format\r\n            \"CommBody\": \"\", // Payment Link nothing to required\r\n            \"Attachments\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatservicerequestapi.azurewebsites.net/api/CreateServiceRequest?code=cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ==",
+							"protocol": "https",
+							"host": [
+								"uatservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CreateServiceRequest"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FISS POS Actions Copy",
+					"id": "299cfe35-324a-4676-a587-7e99aee0ac3b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TransectionId\": 1,\r\n    \"SrvReqRefNo\": \"SR202312211122532080\",\r\n    \"Status\": \"APPROVED\",\r\n    \"RequirementList\": [],\r\n    \"TransactionPayload\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatservicerequestapi.azurewebsites.net/api/POSActionsOnServReq?code=cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ==",
+							"protocol": "https",
+							"host": [
+								"uatservicerequestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"POSActionsOnServReq"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "cXz6-1y9YfwYcQrXy5W1ww-Y00ZD7CAykYrcNM2rUKgwAzFuzq1hYQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "9cef4b6e-783c-4db4-8b7e-6b3e2eddf1cd"
+		}
+	]
+}

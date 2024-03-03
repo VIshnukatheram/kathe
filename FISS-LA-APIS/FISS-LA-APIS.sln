@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FISS-LA-APIS", "FISS-LA-APIS.csproj", "{BFFE9FC1-8ED8-48A7-BD4D-F4F478F6A661}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FG-STModels", "..\FG-STModels\FG-STModels\FG-STModels.csproj", "{6C19554D-8A37-40BE-A39E-0A070A88A574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFFE9FC1-8ED8-48A7-BD4D-F4F478F6A661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFE9FC1-8ED8-48A7-BD4D-F4F478F6A661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFE9FC1-8ED8-48A7-BD4D-F4F478F6A661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFE9FC1-8ED8-48A7-BD4D-F4F478F6A661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C19554D-8A37-40BE-A39E-0A070A88A574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C19554D-8A37-40BE-A39E-0A070A88A574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C19554D-8A37-40BE-A39E-0A070A88A574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C19554D-8A37-40BE-A39E-0A070A88A574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79CCE447-D494-4AE6-B1EC-76BFE17B1AA3}
+	EndGlobalSection
+EndGlobal

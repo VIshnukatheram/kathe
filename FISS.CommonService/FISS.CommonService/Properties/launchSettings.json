@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FISS.CommonService": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7235",
+      "launchBrowser": false
+    }
+  }
+}

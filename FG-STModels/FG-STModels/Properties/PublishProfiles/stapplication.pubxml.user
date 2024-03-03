@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <History>False|2024-01-01T13:24:31.0480421Z;False|2024-01-01T18:54:16.3865916+05:30;False|2024-01-01T18:54:13.0922474+05:30;False|2024-01-01T18:40:26.3709228+05:30;False|2024-01-01T18:25:18.6992472+05:30;False|2024-01-01T18:24:07.2999782+05:30;False|2024-01-01T18:23:53.8450186+05:30;False|2024-01-01T18:21:55.4710286+05:30;False|2024-01-01T18:21:43.3875057+05:30;False|2024-01-01T18:20:38.9562859+05:30;False|2024-01-01T18:20:07.7766185+05:30;</History>
+    <LastFailureDetails>2024-01-01T13:24:31.0480421Z|checkNetSdkContainerPrereq</LastFailureDetails>
+  </PropertyGroup>
+</Project>

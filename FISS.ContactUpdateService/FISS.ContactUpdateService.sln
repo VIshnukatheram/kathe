@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FISS.ContactUpdateService", "FISS.ContactUpdateService\FISS.ContactUpdateService.csproj", "{D9825805-CC33-4F49-8325-95E0CC3614CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9825805-CC33-4F49-8325-95E0CC3614CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9825805-CC33-4F49-8325-95E0CC3614CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9825805-CC33-4F49-8325-95E0CC3614CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9825805-CC33-4F49-8325-95E0CC3614CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DFB16C9-1106-4074-BE46-E89E400448D9}
+	EndGlobalSection
+EndGlobal

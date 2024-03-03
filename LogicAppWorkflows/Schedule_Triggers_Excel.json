@@ -1,0 +1,82 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Communication": {
+                "inputs": {
+                    "body": "@body('Communication_Config')",
+                    "method": "POST",
+                    "queries": {
+                        "code": "@{parameters('CommunicationServiceCode')}"
+                    },
+                    "uri": "@{parameters('CommunicationServiceDomain')}/api/CommunicationService"
+                },
+                "runAfter": {
+                    "Communication_Config": [
+                        "SUCCEEDED"
+                    ]
+                },
+                "type": "Http"
+            },
+            "Communication_Config": {
+                "inputs": {
+                    "method": "GET",
+                    "queries": {
+                        "code": "@{parameters('CommunicationConfigCode')}"
+                    },
+                    "uri": "@{parameters('CommunicationConfigDomain')}/api/ScheduleCommunicationAPI"
+                },
+                "runAfter": {},
+                "type": "Http"
+            },
+            "For_each": {
+                "actions": {
+                    "PayeeCode_Authorized": {
+                        "inputs": {
+                            "method": "POST",
+                            "queries": {
+                                "code": "@{parameters('LifeAsiaAPICode')}",
+                                "reqtype": "PayeeCodeAuth",
+                                "srid": "@{items('For_each')}"
+                            },
+                            "uri": "@{parameters('LifeAsiaDomain')}/api/CallLifeAsia"
+                        },
+                        "type": "Http"
+                    }
+                },
+                "foreach": "@body('Get_All_PayeeCode_List_of_Service_Request')",
+                "runAfter": {
+                    "Get_All_PayeeCode_List_of_Service_Request": [
+                        "SUCCEEDED"
+                    ]
+                },
+                "type": "Foreach"
+            },
+            "Get_All_PayeeCode_List_of_Service_Request": {
+                "inputs": {
+                    "method": "GET",
+                    "queries": {
+                        "code": "@{parameters('CommonServiceCode')}"
+                    },
+                    "uri": "@{parameters('CommonServiceDomain')}/api/GetPayCodeAuthList"
+                },
+                "runAfter": {},
+                "type": "Http"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "triggers": {
+            "Recurrence": {
+                "conditions": [],
+                "recurrence": {
+                    "frequency": "Minute",
+                    "interval": 5,
+                    "timeZone": "India Standard Time"
+                },
+                "type": "Recurrence"
+            }
+        }
+    },
+    "kind": "Stateful"
+}

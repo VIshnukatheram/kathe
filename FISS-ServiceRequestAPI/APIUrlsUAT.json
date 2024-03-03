@@ -1,0 +1,20 @@
+{
+  "LAURLS": {
+    "PaymentLink": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink",
+    "ContactUpdateMobileNum": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/PolicyServicing/api/ContactUpdate/MobileNoUpdate"
+  },
+  "CommonURLS": {
+    "Email": "https://communicationservice.azurewebsites.net/api/CommunicationService?code=iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ==",
+    "DeDup": ""
+  },
+  // UAT
+  "WorkFlowURLS": {
+    "ContactNumberUpdate": "https://fgservicerequest.azurewebsites.net:443/api/Generic_BOEAction/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=pgJu5dpB2haDYg4dIPWxfyvKCdttyxgvRCgc1iZ31pY",
+    "ContactNumberUpdateForPOS": "https://fgservicerequest.azurewebsites.net:443/api/Generic_POSAction/triggers/POS_Action_is_Triggered/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FPOS_Action_is_Triggered%2Frun&sv=1.0&sig=LAd17Q7zfYKq5YGicVncKheOkrd4MBkgLHebObE2Efw",
+    "SurrenderQuery": "https://fgservicerequest.azurewebsites.net:443/api/SurrenderLoanFreeLook_QueryAndRetention/triggers/When_a_Surrender_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_Surrender_HTTP_request_is_received%2Frun&sv=1.0&sig=6WZYvWM9DWj1vS60emVRUMwKzJQKQZlTMFKUlfbseXE",
+    "SurrenderRequest": "https://fgservicerequest.azurewebsites.net:443/api/Approvel_Level_Assign/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=LF6KTT2B20EGzFU5191jE40yA6YWaJLdoJD4_1OBcdo",
+    "RaiseCloseFlow": "https://fissservicerequest.azurewebsites.net:443/api/Raise-Close/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=cPSzk4u8KjNg4EtgfTvyl-WUl7hehqffj1MU7t6vPg8",
+    "GenericSerReqQuery": "https://fgservicerequest.azurewebsites.net:443/api/Generic_SerReq_Query/triggers/When_a_Generic_Query_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_Generic_Query_HTTP_request_is_received%2Frun&sv=1.0&sig=bjvHUFVkVTIQwsgQ1690K8ytZ8ykkjvplMsj-IFWFVQ",
+    "PaymentReprocessing": "https://fgservicerequest.azurewebsites.net:443/api/PaymentReprocessing/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=EQEeQZmIs26GX6SqNOV5S5k1gtte7I7PxLVgcygH4gM"
+  }
+}

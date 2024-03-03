@@ -1,0 +1,130 @@
+{
+  "WorkFlowConfig": [
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 1,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 2,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 3,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 4,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 5,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 6,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 7,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 8,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 9,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 10,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 11,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 12,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 13,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 14,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 15,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 16,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 17,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 18,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 19,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 20,
+      "Sub_Typ": 20,
+      "WorkFlowName": "RaiseCloseFlow",
+      "Description": "RaiseCloseFlow"
+    },
+    {
+      "Call_Typ": 8,
+      "Sub_Typ": 2,
+      "WorkFlowName": "PARTIALWITHDRAWALENQUIRY",
+      "Description": "Partial Withdrawal Enquiry"
+    }
+  ]
+}

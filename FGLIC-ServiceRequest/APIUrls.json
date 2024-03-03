@@ -1,0 +1,8 @@
+{
+  "LAURLS": {
+    "PaymentLink": "https://lfagentapigw-rsg.azure-api.net/POSMicroservice/Generic/api/Payment/Getpaymentlink"
+  },
+  "CommonURLS": {
+    "Email": "https://communicationservice.azurewebsites.net/api/CommunicationService?code=iptsqJkI47tgGiCg4ZtbSDd1R7CEDKY6Z_RtnqsAFj92AzFuTY2sBQ=="
+  }
+}
