@@ -1,0 +1,35 @@
+﻿
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>LoginUser</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.count != null)
+        {
+            @foreach (var item in ViewBag.custDetails)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.LoginUser</td>
+                    <td>@item.Email</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>
+                        <a asp-controller="Customer" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-controller="Customer" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+      
+    </tbody>
+</table>

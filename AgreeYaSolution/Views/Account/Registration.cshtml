@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Registration
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <form class="form-horizontal" asp-action="Registration">
+                <div class="form-group">
+                    <label class="control-label">FirstName</label>
+                    <input asp-for="FirstName" class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">LastName</label>
+                    <input asp-for="LastName" class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">LoginUser</label>
+                    <input asp-for="LoginUser" class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input asp-for="Email" class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">PhoneNumber</label>
+                    <input asp-for="PhoneNumber" class="form-control" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
