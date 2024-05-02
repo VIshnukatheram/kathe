@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jayar\\OneDrive\\Documents\\ArgeeTask\\AgreeYaSolution\\AgreeYaSolution.csproj": {}
+    "C:\\Users\\jayar\\OneDrive\\Documents\\FGLIC\\AgreeYaSolution\\AgreeYaSolution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jayar\\OneDrive\\Documents\\ArgeeTask\\AgreeYaSolution\\AgreeYaSolution.csproj": {
+    "C:\\Users\\jayar\\OneDrive\\Documents\\FGLIC\\AgreeYaSolution\\AgreeYaSolution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jayar\\OneDrive\\Documents\\ArgeeTask\\AgreeYaSolution\\AgreeYaSolution.csproj",
+        "projectUniqueName": "C:\\Users\\jayar\\OneDrive\\Documents\\FGLIC\\AgreeYaSolution\\AgreeYaSolution.csproj",
         "projectName": "AgreeYaSolution",
-        "projectPath": "C:\\Users\\jayar\\OneDrive\\Documents\\ArgeeTask\\AgreeYaSolution\\AgreeYaSolution.csproj",
+        "projectPath": "C:\\Users\\jayar\\OneDrive\\Documents\\FGLIC\\AgreeYaSolution\\AgreeYaSolution.csproj",
         "packagesPath": "C:\\Users\\jayar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jayar\\OneDrive\\Documents\\ArgeeTask\\AgreeYaSolution\\obj\\",
+        "outputPath": "C:\\Users\\jayar\\OneDrive\\Documents\\FGLIC\\AgreeYaSolution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
